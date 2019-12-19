@@ -18,4 +18,11 @@ class Controller extends BaseController
         }
 
 
+        public function pet() {
+            return view('pet')
+            ->with('title','Laravel Testing')
+            ->with('subtitle','Introduction to Laravel');
+            }
+
+
 }
