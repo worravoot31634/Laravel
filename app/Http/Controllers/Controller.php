@@ -11,18 +11,31 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function index() {
+    public function index()
+    {
         return view('index')
-        ->with('title','Laravel Testing')
-        ->with('subtitle','Introduction to Laravel');
-        }
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
 
 
-        public function pet() {
-            return view('pet')
-            ->with('title','Laravel Testing')
-            ->with('subtitle','Introduction to Laravel');
-            }
+    public function pet()
+    {
+        return view('pet')
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
+    public function activity()
+    {
+        return view('activity')
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
 
-
+    public function activityDetail()
+    {
+        return view("activity_detail")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
 }

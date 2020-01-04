@@ -15,9 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('home','Controller@index');
+Route::get('home', 'Controller@index');
 
-Route::get('pet','Controller@pet');
-
-
-
+Route::get('pet', 'Controller@pet');
+Route::get('activity', 'Controller@activity');
+Route::get('activityDetail', 'Controller@activityDetail');
