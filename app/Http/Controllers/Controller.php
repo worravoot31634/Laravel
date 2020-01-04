@@ -77,4 +77,21 @@ class Controller extends BaseController
             ->with('title', 'Laravel Testing')
             ->with('subtitle', 'Introduction to Laravel');
     }
+    
+    public function chatMessage()
+    {
+        return view("chatMessage")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
+
+
+
+    public function donate()
+    {
+            return view("donate")
+                ->with('title', 'Laravel Testing')
+                ->with('subtitle', 'Introduction to Laravel');
+    }
+
 }
