@@ -16,12 +16,32 @@
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>-->
+    crossorigin="anonymous"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="CSS/CustomCss.css">
+<link rel="stylesheet" href="./CSS/CustomCss.css">
 
 <style>
+    .statusCircle {
+        height: 30px;
+        width: 30px;
+        background-color: red;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .btnEdit {
+        width: 40%;
+        border-radius: 3px;
+        border: none;
+        background-color: #786898;
+        color: #ffffff;
+    }
+
+    .btnEdit:hover {
+        background-color: #373143;
+    }
+
     .activity-content-link {
         text-decoration: none;
         color: black;
@@ -37,13 +57,14 @@
     }
 </style>
 
+
 <body id="myPage">
 
 
 
     <!-- Navbar -->
     <div id="menu" class="w3-top" style="display: block;">
-        <div class="w3-bar w3-white w3-card">
+        <div class="w3-white w3-card">
             <a class="w3-bar-item w3-button  w3-hide-large w3-right w3-hover-white" href="javascript:void(0);"
                 onclick="openNav()"><i class="fa fa-bars"></i></a>
             <a href="#" style="font-size: 20px;" class="w3-bar-item w3-button w3-white"><img width="50"
@@ -55,10 +76,14 @@
                     class=" w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>บริจาค</b></a>
                 <a href="" style="font-size: 20px;"
                     class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>กิจกรรม</b></a>
-                <a href=" #pricing " style="font-size: 20px;"
-                    class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>เข้าสู่ระบบ</b></a>
-                <a href="#contact " style="font-size: 20px; "
-                    class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>สมัครสมาชิก</b></a>
+                <div class="w3-dropdown-hover" style="font-size: 20px;">
+                    <button class=" w3-button"><b>Jame Logan</b></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="#" class="w3-bar-item w3-button"><b>โพสต์ของฉัน</b></a>
+                        <a href="#" class="w3-bar-item w3-button"><b>ประวัติแชท</b></a>
+                        <a href="#" class="w3-bar-item w3-button"><b>ออกจากระบบ</b></a>
+                    </div>
+                </div>
                 <a href="#" style="font-size:18px; margin-right: 10px;" onclick="hideNav()"
                     class="w3-black w3-circle w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right"
                     title="Search"><i class="fa fa-search"></i></a>
@@ -70,9 +95,14 @@
             <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
             <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
             <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
-            <a href="#pricing " class="w3-bar-item w3-button ">เข้าสู่ระบบ</a>
-            <a href="#contact " class="w3-bar-item w3-button ">สมัครสมาชิก</a>
-
+            <div class="w3-dropdown-hover">
+                <button class=" w3-button"><b>Jame Logan</b></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button"><b>โพสต์ของฉัน</b></a>
+                    <a href="#" class="w3-bar-item w3-button"><b>ประวัติแชท</b></a>
+                    <a href="#" class="w3-bar-item w3-button"><b>ออกจากระบบ</b></a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -102,199 +132,98 @@
             <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
             <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
             <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
-            <a href="#pricing " class="w3-bar-item w3-button ">เข้าสู่ระบบ</a>
-            <a href="#contact " class="w3-bar-item w3-button ">สมัครสมาชิก</a>
-
-        </div>
-
-    </div>
-    <!--Content-->
-
-    <!--header text and image of activity-->
-    <center>
-        <div class="w3-container" style="margin-top:40px;display:inline-block">
-            <img src="./Images/icon/cat.png" alt="" srcset="" width="50px">
-            <div style="display:inline-block;">
-                <p style="font-size: 30px;font-weight:bold;vertical-align: middle;">กิจกรรม</p>
+            <div class="w3-dropdown-hover">
+                <button class=" w3-button"><b>Jame Logan</b></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button"><b>โพสต์ของฉัน</b></a>
+                    <a href="#" class="w3-bar-item w3-button"><b>ประวัติแชท</b></a>
+                    <a href="#" class="w3-bar-item w3-button"><b>ออกจากระบบ</b></a>
+                </div>
             </div>
+
         </div>
-    </center>
-    <!--end header text and image of activity-->
-
-
-    <div class="w3-container ">
-
-        <!--row of half content activity-->
-
-        <div class="w3-row">
-            <!--row  half left side-->
-
-            <div class="w3-half" style="padding: 10px;">
-                <a href="activityDetail" class="activity-content-link">
-                    <div class="w3-half colorActivity" style="height: 210px;">
-                        <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 210px;">
-                    </div> <!-- end of img -->
-
-
-                    <div class="w3-half colorActivity" style="height: 210px;">
-
-                        <!--img and text side by side-->
-                        <div style="margin-top: 5px;float: left;">
-                            <div style="display:inline-block">
-                                <img src="./Images/new1.jpg" alt="" srcset="" width="100%"
-                                    style="border-radius: 100%;width: 20px;height: 20px;float: left;margin-right: 5px;margin-left:5px;">
-                            </div>
-                            <div style="display:inline-block">
-                                <h6 class="w3-left" style="font-size: 14px;">Jame Logan</h6>
-                            </div>
-                        </div><!-- end of img and text side by side-->
-
-                        <p style="font-size: 1em;clear: both;">It is a long established fact that a reader will be
-                            distracted by the
-                            readable content of a page
-                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-                            normal
-                            distribution of letters, as opposed to using 'Content here, content here', making it look
-                            like
-                            readable.
-                        </p>
-                </a></div><!-- end of text -->
-        </div> <!-- end of row  half left side-->
-
-        <!--row  half right side-->
-
-        <div class="w3-half" style="padding: 10px;">
-            <a href="activityDetail" class="activity-content-link">
-                <div class="w3-half colorActivity" style="height: 210px;">
-                    <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 210px;">
-                </div> <!-- end of img -->
-
-
-                <div class="w3-half colorActivity" style="height: 210px;">
-
-                    <!--img and text side by side-->
-                    <div style="margin-top: 5px;float: left;">
-                        <div style="display:inline-block">
-                            <img src="./Images/new1.jpg" alt="" srcset="" width="100%"
-                                style="border-radius: 100%;width: 20px;height: 20px;float: left;margin-right: 5px;margin-left:5px;">
-                        </div>
-                        <div style="display:inline-block">
-                            <h6 class="w3-left" style="font-size: 14px;">Jame Logan</h6>
-                        </div>
-                    </div><!-- end of img and text side by side-->
-
-                    <p style="font-size: 1em;clear: both;">It is a long established fact that a reader will be
-                        distracted by the
-                        readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-                        normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look
-                        like
-                        readable.
-                    </p>
-            </a></div><!-- end of text -->
-    </div> <!-- end of row  half right side-->
 
     </div>
-    <!--end of row of half content activity-->
+
+    <div class="w3-container" style="margin-top: 80px;left: 2%;position:relative">
+        <div style="display:inline-block">
+            <p style="font-size: 28px;font-weight: bold;">โพสต์ของฉัน</p>
+        </div>
+        <div style="display:inline-block">
+            <img src="./Images/icon/dogIcon2.png" alt="" srcset="" width="25%">
+        </div>
     </div>
-    </div>
-    <!--end of container-->
-
-    <div class="w3-container ">
-
-        <!--row of half content activity-->
-
-        <div class="w3-row">
-            <!--row  half left side-->
-
-            <div class="w3-half" style="padding: 10px;">
-                <a href="activityDetail" class="activity-content-link">
-                    <div class="w3-half colorActivity" style="height: 210px;">
-                        <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 210px;">
-                    </div> <!-- end of img -->
-
-
-                    <div class="w3-half colorActivity" style="height: 210px;">
-
-                        <!--img and text side by side-->
-                        <div style="margin-top: 5px;float: left;">
-                            <div style="display:inline-block">
-                                <img src="./Images/new1.jpg" alt="" srcset="" width="100%"
-                                    style="border-radius: 100%;width: 20px;height: 20px;float: left;margin-right: 5px;margin-left:5px;">
-                            </div>
-                            <div style="display:inline-block">
-                                <h6 class="w3-left" style="font-size: 14px;">Jame Logan</h6>
-                            </div>
-                        </div><!-- end of img and text side by side-->
-
-                        <p style="font-size: 1em;clear: both;">It is a long established fact that a reader will be
-                            distracted by the
-                            readable content of a page
-                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-                            normal
-                            distribution of letters, as opposed to using 'Content here, content here', making it look
-                            like
-                            readable.
-                        </p>
-                </a></div><!-- end of text -->
-        </div> <!-- end of row  half left side-->
-
-        <!--row  half right side-->
-
-        <div class="w3-half" style="padding: 10px;">
-            <a href="activityDetail" class="activity-content-link">
-                <div class="w3-half colorActivity" style="height: 210px;">
-                    <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 210px;">
-                </div> <!-- end of img -->
-
-
-                <div class="w3-half colorActivity" style="height: 210px;">
-
-                    <!--img and text side by side-->
-                    <div style="margin-top: 5px;float: left;">
-                        <div style="display:inline-block">
-                            <img src="./Images/new1.jpg" alt="" srcset="" width="100%"
-                                style="border-radius: 100%;width: 20px;height: 20px;float: left;margin-right: 5px;margin-left:5px;">
-                        </div>
-                        <div style="display:inline-block">
-                            <h6 class="w3-left" style="font-size: 14px;">Jame Logan</h6>
-                        </div>
-                    </div><!-- end of img and text side by side-->
-
-                    <p style="font-size: 1em;clear: both;">It is a long established fact that a reader will be
-                        distracted by the
-                        readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-                        normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look
-                        like
-                        readable.
-                    </p>
-            </a></div><!-- end of text -->
-    </div> <!-- end of row  half right side-->
-
-    </div>
-    <!--end of row of half content activity-->
-    </div>
-    </div>
-    <!--end of container-->
-
+    <!--content-->
     <div class="w3-container">
+        <div class="w3-container w3-border">
+            <div style="padding:10px;" class="w3-quarter w3-container">
+                <div class="w3-card-4 test" style="width:100%;max-width:300px;">
+                    <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
+                    <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
+                        <button class="btnEdit">แก้ไข</button>
+                        <a style="background-color: red;" class="w3-right statusCircle"></a>
+                        <!--<p>Architect and engineer</p>-->
+                    </div>
+                </div>
+            </div>
+            <div style="padding:10px;" class="w3-quarter w3-container">
+                <div class="w3-card-4 test" style="width:100%;max-width:300px;">
+                    <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
+                    <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
+                        <button class="btnEdit">แก้ไข</button>
+                        <a style="background-color: green;" class="w3-right statusCircle"></a>
+                        <!--<p>Architect and engineer</p>-->
+                    </div>
+                </div>
+            </div>
+            <div style="padding:10px;" class="w3-quarter w3-containe">
+                <div class="w3-card-4 test" style="width:100%;max-width:300px;">
+                    <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
+                    <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
+                        <button class="btnEdit">แก้ไข</button>
+
+                        <a style="background-color: yellow;" class="w3-right statusCircle"></a>
+                        <!--<p>Architect and engineer</p>-->
+                    </div>
+                </div>
+            </div>
+            <div style="padding:10px;" class="w3-quarter w3-container">
+                <div class="w3-card-4 test" style="width:100%;max-width:300px;">
+                    <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
+                    <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
+                        <button class="btnEdit">แก้ไข</button>
+                        <a style="background-color: green;" class="w3-right statusCircle"></a>
+                        <!--<p>Architect and engineer</p>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w3-container" style="margin-top: 80px;left: 2%;position:relative">
+        <div style="display:inline-block">
+            <p style="font-size: 28px;font-weight: bold;">การขอบริจาค</p>
+        </div>
+        <div style="display:inline-block">
+            <img src="./Images/icon/catIcon1.png" alt="" srcset="" width="30%">
+        </div>
+    </div>
+    <div class="w3-container w3-border" style="margin: 1%; position:relative">
 
         <!--row of half content activity-->
 
-        <div class="w3-row">
+        <div class="w3-row" style="width: 100%;margin:auto">
             <!--row  half left side-->
 
             <div class="w3-half" style="padding: 10px;">
                 <a href="activityDetail" class="activity-content-link">
-                    <div class="w3-half colorActivity" style="height: 210px;">
-                        <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 210px;">
+                    <div class="w3-half colorActivity" style="height: 220px;">
+                        <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 220px;">
                     </div> <!-- end of img -->
 
 
-                    <div class="w3-half colorActivity" style="height: 210px;">
+                    <div class="w3-half colorActivity" style="height: 220px;">
 
                         <!--img and text side by side-->
                         <div style="margin-top: 5px;float: left;">
@@ -307,7 +236,7 @@
                             </div>
                         </div><!-- end of img and text side by side-->
 
-                        <p style="font-size: 1em;clear: both;">It is a long established fact that a reader will be
+                        <p style="font-size: 1vw;clear: both;">It is a long established fact that a reader will be
                             distracted by the
                             readable content of a page
                             when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
@@ -316,6 +245,10 @@
                             like
                             readable.
                         </p>
+                        <div>
+                            <button class="btnEdit" style="margin: 5px;">รายละเอียดการบริจาค</button>
+                            <button class="btnEdit" style="width: 20%;">แก้ไข</button>
+                        </div>
                 </a></div><!-- end of text -->
         </div> <!-- end of row  half left side-->
 
@@ -323,12 +256,12 @@
 
         <div class="w3-half" style="padding: 10px;">
             <a href="activityDetail" class="activity-content-link">
-                <div class="w3-half colorActivity" style="height: 210px;">
-                    <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 210px;">
+                <div class="w3-half colorActivity" style="height: 220px;">
+                    <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 220px;">
                 </div> <!-- end of img -->
 
 
-                <div class="w3-half colorActivity" style="height: 210px;">
+                <div class="w3-half colorActivity" style="height: 220px;">
 
                     <!--img and text side by side-->
                     <div style="margin-top: 5px;float: left;">
@@ -341,7 +274,7 @@
                         </div>
                     </div><!-- end of img and text side by side-->
 
-                    <p style="font-size: 1em;clear: both;">It is a long established fact that a reader will be
+                    <p style="font-size: 1vw;clear: both;">It is a long established fact that a reader will be
                         distracted by the
                         readable content of a page
                         when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
@@ -350,6 +283,10 @@
                         like
                         readable.
                     </p>
+                    <div>
+                        <button class="btnEdit" style="margin: 5px;">รายละเอียดการบริจาค</button>
+                        <button class="btnEdit" style="width: 20%;">แก้ไข</button>
+                    </div>
             </a></div><!-- end of text -->
     </div> <!-- end of row  half right side-->
 
@@ -359,7 +296,7 @@
     </div>
     <!--end of container-->
 
-    <!--end Content-->
+    <!--end of content-->
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center ">
         <h4>Follow Us</h4>
@@ -429,8 +366,6 @@
     </script>
 
 </body>
-
-
 
 </html>
 
