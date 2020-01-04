@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('home', 'Controller@index');
-
+Route::get('register', 'Controller@register');
 Route::get('pet', 'Controller@pet');
 Route::get('petDetail', 'Controller@petDetail');
 Route::get('activity', 'Controller@activity');
