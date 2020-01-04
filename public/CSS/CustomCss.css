@@ -32,7 +32,7 @@ body {
 }
 
 .advanceSearch{
-    width: 40%;
+    width: 85%;
     height: 40px;
   box-sizing: border-box;
   border: 2px solid #726292;
@@ -43,6 +43,7 @@ body {
   background-position: 10px 10px; 
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
+  
 }
 
 
