@@ -19,6 +19,7 @@ Route::get('home', 'Controller@index');
 Route::get('register', 'Controller@register');
 Route::get('pet', 'Controller@pet');
 Route::get('petDetail', 'Controller@petDetail');
+Route::get('editPetDetail', 'Controller@editPetDetail');
 Route::get('activity', 'Controller@activity');
 Route::get('activityDetail', 'Controller@activityDetail');
 Route::get('writePost', 'Controller@writePost');
