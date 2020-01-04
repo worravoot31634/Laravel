@@ -26,3 +26,5 @@ Route::get('writePost', 'Controller@writePost');
 Route::get('login', 'Controller@login');
 Route::get('resultSearch', 'Controller@resultSearch');
 Route::get('chatMessage', 'Controller@chatMessage');
+Route::get('donate', 'Controller@donate');
+Route::get('myPost', 'Controller@myPost');

@@ -85,4 +85,19 @@ class Controller extends BaseController
             ->with('subtitle', 'Introduction to Laravel');
     }
 
+    
+    public function myPost()
+    {
+            return view("myPost")
+                ->with('title', 'Laravel Testing')
+                ->with('subtitle', 'Introduction to Laravel');
+    }
+
+    public function donate()
+    {
+            return view("donate")
+                ->with('title', 'Laravel Testing')
+                ->with('subtitle', 'Introduction to Laravel');
+    }
+
 }
