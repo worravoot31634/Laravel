@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<title>Pet Adoption</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./CSS/W3S/w3.css">
+<link rel="stylesheet" href="./CSS/W3S/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./CSS/Bootstrap/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>-->
+
+<link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/CustomCss.css">
+
+<style>
+    .activity-content-link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .activity-content-link:hover {
+        color: black;
+    }
+
+    .colorActivity {
+        background-color: #E2E0E0;
+
+    }
+
+    body {
+        background-image: url('./Images/source/bgLogin.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+
+    }
+</style>
+
+<body id="myPage">
+
+
+
+    <!-- Navbar -->
+    <div id="menu" class="w3-top" style="display: block;">
+        <div class="w3-bar w3-white w3-card">
+            <a class="w3-bar-item w3-button  w3-hide-large w3-right w3-hover-white" href="javascript:void(0);"
+                onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="#" style="font-size: 20px;" class="w3-bar-item w3-button w3-white"><img width="50"
+                    src="./Images/icon/Logo.png"></a>
+            <div style="margin-top: 10px;" class="w3-right w3-hide-medium w3-hide-small w3-animate-right">
+                <a href="" style="font-size: 20px;"
+                    class=" w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>สัตว์เลี้ยง</b></a>
+                <a href="" style="font-size: 20px;"
+                    class=" w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>บริจาค</b></a>
+                <a href="" style="font-size: 20px;"
+                    class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>กิจกรรม</b></a>
+                <a href=" #pricing " style="font-size: 20px;"
+                    class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>เข้าสู่ระบบ</b></a>
+                <a href="#contact " style="font-size: 20px; "
+                    class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>สมัครสมาชิก</b></a>
+                <a href="#" style="font-size:18px; margin-right: 10px;" onclick="hideNav()"
+                    class="w3-black w3-circle w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right"
+                    title="Search"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large ">
+            <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
+            <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
+            <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
+            <a href="#pricing " class="w3-bar-item w3-button ">เข้าสู่ระบบ</a>
+            <a href="#contact " class="w3-bar-item w3-button ">สมัครสมาชิก</a>
+
+        </div>
+    </div>
+
+
+
+    <!-- Navbar Search Hide-->
+    <div id="searchMenu" class="w3-top" style="display: none;">
+        <div class="w3-bar w3-white w3-card">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white"
+                href="javascript:void(0);" onclick="openNav2()"><i class="fa fa-bars"></i></a>
+            <a href="#" style="font-size: 20px;" class="w3-bar-item w3-button w3-white"><img width="50"
+                    src="./Images/icon/Logo.png"></a>
+            <div style="margin-top: 10px;" class="w3-center w3-hide-small w3-animate-left">
+                <input class="simpleSearch" placeholder="ค้นหา" style="font-size: 20px;" size="100" type="text" />
+                <a href="#" style="font-size:18px; " onclick="hideNav()"
+                    class=" w3-black w3-button w3-hide-small w3-circle" title="Search"><i class="fa fa-search"></i></a>
+                <a href="#" style="font-size:18px; margin-right: 10px;margin-bottom: 4px;" onclick="showNav()"
+                    class="w3-black w3-bar-item w3-button w3-hide-small w3-right w3-circle" title="Search"><i
+                        class="fa fa-close"></i></a>
+            </div>
+        </div>
+
+
+
+        <!-- Navbar on small screens case Search-->
+        <div id="navDemo2" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+            <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
+            <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
+            <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
+            <a href="#pricing " class="w3-bar-item w3-button ">เข้าสู่ระบบ</a>
+            <a href="#contact " class="w3-bar-item w3-button ">สมัครสมาชิก</a>
+
+        </div>
+
+    </div>
+    <!--Content-->
+    <div class="w3-container" style="margin-top: 150px;margin-bottom: 100px;">
+        <div class="w3-row  w3-right"
+            style="width: 35%;border-radius: 5px;background-color: #726292;margin-right: 10%;">
+            <div class="w3-row">
+                <br>
+                <center>
+                    <p style="font-size: 30px;color:white;font-weight: bold;">สมัครสมาชิก</p>
+                </center>
+                <form action="">
+                    <table align="center">
+                        <tr >
+                            <td>
+                                <p style="font-size: 18px;">ชื่อ</p>
+                                <center>
+                                    <input type="text" style="width:60%;border: none;border-radius: 2px;" name="name" placeholder="กรอกชื่อ" required>
+                                </center>
+                            </td>
+                            <td>
+                                <p style="font-size: 18px;">นามสกุล</p>
+                                <center>
+                                    <input type="text" style="width:60%;border: none;border-radius: 2px;" name="surname" placeholder="กรอกนามสกุล" required>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style="font-size: 18px;">ชื่อผู้ใช้</p>
+                                <center>
+                                    <input type="text" style="width:60%;border: none;border-radius: 2px;" name="username" placeholder="กรอกชื่อผู้ใช้" required>
+                                </center>
+                            </td>
+                            <td>
+                                <p style="font-size: 18px;">รหัสผ่าน</p>
+                                <center>
+                                    <input type=text style="width:60%;border: none;border-radius: 2px;" name="password" placeholder="รหัสผ่าน" required>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style="font-size: 18px;">อีเมล</p>
+                                <center>
+                                    <input type=email style="width:60%;border: none;border-radius: 2px;" name="email" placeholder="xxxx@gmail.com" required>
+                                </center>
+                            </td>
+                            <td>
+                                <p style="font-size: 18px;">หมายเลขโทรศัพท์</p>
+                                <center>
+                                    <input type="tel" style="width:60%;border: none;border-radius: 2px;" name="phone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style="font-size: 18px;">รูปโปรไฟล์</p>
+                                <center>
+                                    <input type="file" name="myPhoto" style="width:60%;border: none;border-radius: 2px;" required>
+                                </center>
+                            </td>
+                        </tr>
+                        
+                        </table>
+                        
+                    <br>
+                    <center><button type="submit" name="register" style="margin-bottom: 20%;">สมัครสมาชิก</button></center>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--end Content-->
+    <!-- Footer -->
+
+
+    <script>
+        // Script for side navigation
+        function w3_open() {
+            var x = document.getElementById("mySidebar ");
+            x.style.width = "300px ";
+            x.style.paddingTop = "10% ";
+            x.style.display = "block ";
+        }
+
+        // Close side navigation
+        function w3_close() {
+            document.getElementById("mySidebar ").style.display = "none ";
+        }
+
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+            var x = document.getElementById("navDemo");
+
+            if (x.className.indexOf("w3-show ") == -1) {
+                x.className += " w3-show ";
+
+            } else {
+                x.className = x.className.replace(" w3-show ", " ");
+
+            }
+
+
+        }
+
+        function openNav2() {
+
+            var y = document.getElementById("navDemo2");
+            if (y.className.indexOf("w3-show ") == -1) {
+                y.className += " w3-show ";
+
+            } else {
+                y.className = y.className.replace(" w3-show ", " ");
+
+            }
+
+
+
+
+        }
+    </script>
+
+</body>
+
+
+
+</html>
+
+
+
+<script>
+    function hideNav() {
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("searchMenu").style.display = "block";
+
+    }
+
+
+    function showNav() {
+        document.getElementById("menu").style.display = "block";
+        document.getElementById("searchMenu").style.display = "none";
+
+
+    }
+</script>
