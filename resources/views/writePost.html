@@ -20,6 +20,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="CSS/CustomCss.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
     .activity-content-link {
@@ -40,6 +41,19 @@
     .pragraph {
         font-size: 20px;
     }
+
+    .submitClass {
+        background-color: #786898;
+        border: none;
+        width: 30%;
+        color: #FFFFFF;
+        border-radius: 4px;
+        font-size: 18px;
+    }
+
+    .submitClass:hover {
+        background-color: #594481;
+    }
 </style>
 
 <body id="myPage">
@@ -48,7 +62,7 @@
 
     <!-- Navbar -->
     <div id="menu" class="w3-top" style="display: block;">
-        <div class="w3-bar w3-white w3-card">
+        <div class="w3-white w3-card">
             <a class="w3-bar-item w3-button  w3-hide-large w3-right w3-hover-white" href="javascript:void(0);"
                 onclick="openNav()"><i class="fa fa-bars"></i></a>
             <a href="#" style="font-size: 20px;" class="w3-bar-item w3-button w3-white"><img width="50"
@@ -60,10 +74,14 @@
                     class=" w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>บริจาค</b></a>
                 <a href="" style="font-size: 20px;"
                     class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>กิจกรรม</b></a>
-                <a href=" #pricing " style="font-size: 20px;"
-                    class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>เข้าสู่ระบบ</b></a>
-                <a href="#contact " style="font-size: 20px; "
-                    class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>สมัครสมาชิก</b></a>
+                <div class="w3-dropdown-hover" style="font-size: 20px;">
+                    <button class=" w3-button"><b>Jame Logan</b></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="#" class="w3-bar-item w3-button"><b>โพสต์ของฉัน</b></a>
+                        <a href="#" class="w3-bar-item w3-button"><b>ประวัติแชท</b></a>
+                        <a href="#" class="w3-bar-item w3-button"><b>ออกจากระบบ</b></a>
+                    </div>
+                </div>
                 <a href="#" style="font-size:18px; margin-right: 10px;" onclick="hideNav()"
                     class="w3-black w3-circle w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right"
                     title="Search"><i class="fa fa-search"></i></a>
@@ -75,9 +93,14 @@
             <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
             <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
             <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
-            <a href="#pricing " class="w3-bar-item w3-button ">เข้าสู่ระบบ</a>
-            <a href="#contact " class="w3-bar-item w3-button ">สมัครสมาชิก</a>
-
+            <div class="w3-dropdown-hover">
+                <button class=" w3-button"><b>Jame Logan</b></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button"><b>โพสต์ของฉัน</b></a>
+                    <a href="#" class="w3-bar-item w3-button"><b>ประวัติแชท</b></a>
+                    <a href="#" class="w3-bar-item w3-button"><b>ออกจากระบบ</b></a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -107,96 +130,58 @@
             <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
             <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
             <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
-            <a href="#pricing " class="w3-bar-item w3-button ">เข้าสู่ระบบ</a>
-            <a href="#contact " class="w3-bar-item w3-button ">สมัครสมาชิก</a>
+            <div class="w3-dropdown-hover">
+                <button class=" w3-button"><b>Jame Logan</b></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button"><b>โพสต์ของฉัน</b></a>
+                    <a href="#" class="w3-bar-item w3-button"><b>ประวัติแชท</b></a>
+                    <a href="#" class="w3-bar-item w3-button"><b>ออกจากระบบ</b></a>
+                </div>
+            </div>
 
         </div>
 
     </div>
     <!--Content-->
 
-    <center>
-        <h1 style="margin-top: 50px;">Where can I get some ?</h1>
-        <br>
-        <img src="./Images/new1.jpg" alt="" srcset="" width="80%">
-    </center>
+    <form action="" method="post" enctype="multipart/form-data">
+        <div class="container" style="width: 80%;">
+            <div class="row w3-border" style="margin-top: 50px;margin-bottom: 50px;">
+                <div class="w3-half w3-center">
+                    <img src="./Images/source/picture.png" alt="" srcset="" width="50%">
+                    <div style="clear:both;">
+                        <input type="file" value="โพสต์" class="submitClass" style="margin-bottom: 10px;">
+                    </div>
 
-    <div style="width: 80%;display: table;width: 80%;" class="contentCenter">
+                </div>
 
-        <p class="pragraph">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-            alteration in
-            some form, by injected humour, or randomised words which don't look even slightly believable. If you
-            are
-            going
-            to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
-            middle
-            of
-            text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
-            making
-            this
-            the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
-            with a
-            handful
-            of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-        </p>
 
-        <p class="pragraph">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-            alteration in
-            some form, by injected humour, or randomised words which don't look even slightly believable. If you
-            are
-            going
-            to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
-            middle
-            of
-            text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
-            making
-            this
-            the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
-            with a
-            handful
-            of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-        </p>
+                <div class="w3-half" style="background-color: #E2E0E0;">
+                    <div style="display:inline-block;margin-top: 10px;">
+                        <img src="./Images/new1.jpg" alt="" srcset="" width="100%"
+                            style="border-radius: 100%;width: 40px;height: 40px;float: left;margin-right: 5px;margin-left:5px;">
+                    </div>
+                    <div style="display: inline-block;">
+                        <h6 class="w3-left" style="font-size: 20px;">Jame Logan</h6>
+                    </div>
+                    <div>
+                        <h6 class="w3-left" style="font-size: 18px;margin-left: 30px;">รายละเอียด</h6>
+                    </div>
+                    <center>
+                        <div class="w3-row" style="width: 80%;">
+                            <p><textarea style="width: 100%;border-radius: 5px;" class="w3-border" rows="15"
+                                    name="comment"></textarea>
+                            </p>
 
-        <p class="pragraph">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-            alteration in
-            some form, by injected humour, or randomised words which don't look even slightly believable. If you
-            are
-            going
-            to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
-            middle
-            of
-            text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
-            making
-            this
-            the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
-            with a
-            handful
-            of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-        </p>
-
-    </div>
-    <br>
-    <div class="container">
-        <div class="row">
-            <div>
-                <h6 style="font-size:20px;display: inline-block;">Post by </h6> &nbsp;&nbsp;
-            </div>
-            <div>
-                <img src="./Images/source/2.png" style="width: 30px;height: 30px;" alt="" srcset="">
-            </div>
-            <div>
-                &nbsp;&nbsp;<h6 style="font-size:20px;display: inline-block;">Jame Logan</h6>
+                            <input type="submit" value="โพสต์" class="submitClass"
+                                style="float:right;margin-bottom: 10px;">
+                        </div>
+                    </center>
+                </div>
+                <!--end of w3-half right-->
             </div>
         </div>
-    </div>
-    <br>
-    <!--end Content-->
-
-
-
+    </form>
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center ">
         <h4>Follow Us</h4>

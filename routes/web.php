@@ -21,3 +21,5 @@ Route::get('pet', 'Controller@pet');
 Route::get('petDetail', 'Controller@petDetail');
 Route::get('activity', 'Controller@activity');
 Route::get('activityDetail', 'Controller@activityDetail');
+Route::get('writePost', 'Controller@writePost');
+Route::get('login', 'Controller@login');
