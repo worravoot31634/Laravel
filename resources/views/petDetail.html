@@ -22,22 +22,83 @@
 <link rel="stylesheet" href="CSS/CustomCss.css">
 
 <style>
-    .activity-content-link {
-        text-decoration: none;
-        color: black;
-    }
+.statusCircle {
+  height: 30px;
+  width: 30px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
 
-    .activity-content-link:hover {
-        color: black;
-    }
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #786898;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 125px;
+  width: 280px;
+  border-radius: 10px 10px 10px 10px;
+}
 
-    .statusCircle {
-        height: 30px;
-        width: 30px;
-        background-color: red;
-        border-radius: 50%;
-        display: inline-block;
-    }
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 125px;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #786898;
+  border-radius: 15px 15px 0px 0px;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
 </style>
 
 
@@ -127,19 +188,18 @@
     <!--end header text and image of activity-->
 
 
-    <div class="container" style="width: 80%;height: 100px;">
 
 
 
+    <div class="w3-container" style=" margin-left: auto;
+    margin-right: auto;width: 80%;padding: 10px;" height="200px">
 
-
-
-        <div class="w3-container" style="padding: 10px;" height="200px">
-
-            <div class="w3-half">
-                <img src="./Images/dogPic.png" width="100%">
-            </div>
-            <div class="w3-half" style="background-color: lightgrey;">
+        <div class="w3-half">
+            <img src="./Images/dogPic.png" width="100%">
+        </div>
+        <div class="w3-half" style="background-color: #E2E0E0;">
+<br>
+            <div class="w3-container">
                 <div class="w3-half">
 
                     <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
@@ -155,21 +215,77 @@
                     <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
                         <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">ยังไม่มีผู้สนใจรับเลี้ยง</a>
                         <a style="background-color: green;" class="w3-left statusCircle"></a>
+                    </div>
 
-
-
+                </div>
+            </div>
+            <!--Detail Pet-->
+            <div class="w3-container">
+                <br><br>
+                <div class="w3-row w3-padding">
+                    <a style="padding-left: 4px ;font-size: 1.2em;font-weight: bold;">ชนิดสัตว์เลี้ยง: </a>
+                </div>
+                <div class="w3-row w3-padding">
+                    <a style="padding-left: 4px ;font-size: 1.2em;font-weight: bold;">สายพันธู์: </a>
+                </div>
+                <div class="w3-row w3-padding">
+                    <a style="padding-left: 4px ;font-size: 1.2em;font-weight: bold;">จังหวัด: </a>
+                </div>
+                <div class="w3-row w3-padding">
+                    <a style="padding-left: 4px ;font-size: 1.2em;font-weight: bold;">หมายเลขโทรศัพท์: </a>
+                </div>
+                <div class="w3-row w3-padding">
+                    <a style="padding-left: 4px ;font-size: 1.2em;font-weight: bold;">รายละเอียด: </a>
+                </div>
+                <div class="w3-row w3-padding"> 
+                    <div class="w3-row w3-padding" style="border: 2px solid whitesmoke;border-radius: 12px;"> 
+                        <p style="padding-left: 4px ;font-size: 1.1em;">
+                            &nbsp&nbsp&nbsp&nbsp There are many variations of passages of Lorem Ipsum 
+                            available, but the majority have suffered alteration 
+                            in some form, by injected humour, or randomised 
+                            words which don't look even slightly believable.
+                            </p>
                     </div>
                 </div>
 
+
+                <div class="w3-row w3-padding">
+                    <button style="border-radius: 14px;" class="w3-animate-opacity open-button" id="btnChat" onclick="openForm()"><img width="35px" src="./Images/icon/chatIcon.png">
+                        <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">แชทสนทนา</a></button>
+
+                    <div class="w3-animate-bottom chat-popup" id="myForm">
+                      <form action="/action_page.php" class="form-container">
+                        <img width="35px" src="./Images/userPic.png">
+                        <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;color: white;padding-right: 10px;">Logan<a style="background-color: #28a745;height:10px;width:10px" class="statusCircle"></a></a>
+                    
+                        
+                        <textarea placeholder="พิมพ์ข้อความ.." name="msg" required></textarea>
+                    
+                        <button style="border-radius:10px; font-size: 1.2em; background-color: #373143;" type="submit" class="btn">ส่งข้อความ</button>
+                        <button style="border-radius:10px; font-size: 1.2em; background-color: darkgray;" type="button" class="btn" onclick="closeForm()">ปิด</button>
+                      </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
         </div>
+
+
+
+
+
     </div>
 
-</div>
 
 
 
-     <!-- Footer -->
-     <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center ">
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center ">
         <h4>Follow Us</h4>
         <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Facebook "><i
                 class="fa fa-facebook "></i></a>
@@ -258,4 +374,14 @@
 
 
     }
+
+    function openForm() {
+  document.getElementById("myForm").style.display = "block";
+  document.getElementById("btnChat").style.display = "none";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+  document.getElementById("btnChat").style.display = "block"
+}
 </script>
