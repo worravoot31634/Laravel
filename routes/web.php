@@ -25,3 +25,4 @@ Route::get('activityDetail', 'Controller@activityDetail');
 Route::get('writePost', 'Controller@writePost');
 Route::get('login', 'Controller@login');
 Route::get('resultSearch', 'Controller@resultSearch');
+Route::get('chatMessage', 'Controller@chatMessage');
