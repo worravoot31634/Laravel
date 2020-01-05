@@ -110,7 +110,39 @@ background-color: #373143;
   opacity: 1;
 }
 </style>
+<style>
+    .activity-content-link {
+        text-decoration: none;
+        color: black;
+    }
 
+    .activity-content-link:hover {
+        color: black;
+    }
+
+    .contentCenter {
+        margin: auto;
+        width: 60%;
+
+    }
+
+    .pragraph {
+        font-size: 20px;
+    }
+
+    .submitClass {
+        background-color: #786898;
+        border: none;
+        width: 30%;
+        color: #FFFFFF;
+        border-radius: 4px;
+        font-size: 18px;
+    }
+
+    .submitClass:hover {
+        background-color: #594481;
+    }
+</style>
 
 
 <body id="myPage">
@@ -219,14 +251,14 @@ background-color: #373143;
     <div class="w3-container" style=" margin-left: auto;
     margin-right: auto;width: 80%;padding: 10px;" height="200px">
 <!--Left side of Page-->
-        <div class="w3-half w3-center w3-border">
-            <img src="./Images/source/picture.png" alt="" srcset="" width="50%">
-                    <div style="clear:both;">
-                        <input type="file" value="โพสต์" class="submitClass" style="margin-bottom: 10px;">
-                    </div>
+<div class="w3-border w3-half w3-center" style="height: 600px;">
+    <img src="./Images/source/picture.png" alt="" srcset="" width="50%">
+    <div style="clear:both;">
+        <input type="file" value="โพสต์" class="submitClass" style="margin-bottom: 10px;">
+    </div>
 
-        </div>
-        <div class="w3-half" style="background-color: #E2E0E0;">
+</div>
+        <div class="w3-half" style="background-color: #E2E0E0;height: 600px;">
 
             <div class="w3-container" style="padding:10px;background-color: #373143; color: white;">
                 <div class="w3-half">
@@ -253,7 +285,7 @@ background-color: #373143;
                         <a style="padding-left: 4px ;font-size: 1.2em;font-weight: bold;">ชนิดสัตว์เลี้ยง: </a>
                     </div>
                     <div class="w3-twothird">
-                        <select class="w3-border w3-rest  w3-select" name="option">
+                        <select class="w3-border w3-rest  w3-select" name="option" required>
                             <option style="font-size: 20px;" value="1">Dogs</option>
                             <option style="font-size: 20px;" value="2">Cats</option>
                         </select>
@@ -266,7 +298,7 @@ background-color: #373143;
                         <a style="padding-left: 4px ;font-size: 1.2em;font-weight: bold;">สายพันธู์: </a>
                     </div>
                     <div class="w3-twothird">
-                        <select class="w3-border w3-rest  w3-select" name="option">
+                        <select class="w3-border w3-rest  w3-select" name="option" required>
                             <option style="font-size: 20px;" value="1">บีเกิล</option>
                             <option style="font-size: 20px;" value="2">บางแก้ว</option>
                         </select>
@@ -279,7 +311,7 @@ background-color: #373143;
                         <a style="padding-left: 4px ;font-size: 1.2em;font-weight: bold;">จังหวัด: </a>
                     </div>
                     <div class="w3-twothird">
-                        <select name="province" class="w3-border w3-rest  w3-select">
+                        <select name="province" class="w3-border w3-rest  w3-select" required>
                             <option value="" selected>--------- เลือกจังหวัด ---------</option>
                             <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
                             <option value="กระบี่">กระบี่ </option>
@@ -368,7 +400,7 @@ background-color: #373143;
                         <a style="padding-left: 4px ;font-size: 1.2em;font-weight: bold;">หมายเลขโทรศัพท์: </a>
                     </div>
                     <div class="w3-twothird">
-                        <input class="w3-input" type="text" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                        <input class="w3-input" type="text" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required/>
                     </div>
                     
                 </div>
@@ -377,7 +409,7 @@ background-color: #373143;
                 </div>
                 <div class="w3-row w3-padding"> 
                     <div class="w3-row w3-padding" style="border: 2px solid whitesmoke;border-radius: 12px;"> 
-                        <textarea class="w3-input" rows="4" cols="50"></textarea>
+                        <textarea class="w3-input" rows="4" cols="50" required></textarea>
                     </div>
                 </div>
 
