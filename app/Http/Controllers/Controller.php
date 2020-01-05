@@ -113,4 +113,10 @@ class Controller extends BaseController
         ->with('subtitle', 'Introduction to Laravel');
     }
 
+    public function adminCheckSys(){
+        return view("adminCheckSys")
+        ->with('title', 'Laravel Testing')
+        ->with('subtitle', 'Introduction to Laravel');
+    }
+
 }

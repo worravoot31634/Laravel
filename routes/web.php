@@ -14,7 +14,6 @@
 Route::get('/', function () {
     return view('index');
 });
-
 Route::get('home', 'Controller@index');
 Route::get('register', 'Controller@register');
 Route::get('pet', 'Controller@pet');
@@ -31,3 +30,4 @@ Route::get('myPost', 'Controller@myPost');
 Route::get('reportChart', 'Controller@reportChart');
 Route::get('adminHome', 'Controller@adminHome');
 Route::get('addPet', 'Controller@addPet');
+Route::get('adminCheckSys', 'Controller@adminCheckSys');
