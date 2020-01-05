@@ -38,3 +38,4 @@ Route::get('donateLogin', 'Controller@donateLogin');
 Route::get('addPetLogin', 'Controller@addPetLogin');
 Route::get('petLogin', 'Controller@petLogin');
 Route::get('petDetailLogin', 'Controller@petDetailLogin');
+Route::get('homeLogin', 'Controller@homeLogin');
