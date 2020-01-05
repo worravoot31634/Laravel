@@ -151,5 +151,11 @@ class Controller extends BaseController
             ->with('title', 'Laravel Testing')
             ->with('subtitle', 'Introduction to Laravel');
     }
+    
+    public function homeLogin()
+    {
+        return view("homeLogin");
+           
+    }
 
 }
