@@ -28,3 +28,5 @@ Route::get('resultSearch', 'Controller@resultSearch');
 Route::get('chatMessage', 'Controller@chatMessage');
 Route::get('donate', 'Controller@donate');
 Route::get('myPost', 'Controller@myPost');
+Route::get('reportChart', 'Controller@reportChart');
+Route::get('adminHome', 'Controller@adminHome');

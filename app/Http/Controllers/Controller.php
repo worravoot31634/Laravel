@@ -77,7 +77,7 @@ class Controller extends BaseController
             ->with('title', 'Laravel Testing')
             ->with('subtitle', 'Introduction to Laravel');
     }
-    
+
     public function chatMessage()
     {
         return view("chatMessage")
@@ -89,9 +89,21 @@ class Controller extends BaseController
 
     public function donate()
     {
-            return view("donate")
-                ->with('title', 'Laravel Testing')
-                ->with('subtitle', 'Introduction to Laravel');
+        return view("donate")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
     }
 
+    public function reportChart()
+    {
+        return view("reportChart")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
+    public function adminHome()
+    {
+        return view("adminHome")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
 }
