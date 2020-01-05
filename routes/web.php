@@ -33,3 +33,4 @@ Route::get('addPet', 'Controller@addPet');
 Route::get('adminCheckSys', 'Controller@adminCheckSys');
 Route::get('adminRegis', 'Controller@adminRegis');
 Route::get('activityLogin', 'Controller@activityLogin');
+Route::get('activityDetailLogin', 'Controller@activityDetailLogin');
