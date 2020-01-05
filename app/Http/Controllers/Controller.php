@@ -94,6 +94,7 @@ class Controller extends BaseController
             ->with('subtitle', 'Introduction to Laravel');
     }
 
+<<<<<<< HEAD
     public function reportChart()
     {
         return view("reportChart")
@@ -106,4 +107,13 @@ class Controller extends BaseController
             ->with('title', 'Laravel Testing')
             ->with('subtitle', 'Introduction to Laravel');
     }
+=======
+    public function resultSearch()
+    {
+            return view("resultSearch")
+                ->with('title', 'Laravel Testing')
+                ->with('subtitle', 'Introduction to Laravel');
+    }
+
+>>>>>>> c747a5e103648dc343c9668505849a82ab6e02eb
 }
