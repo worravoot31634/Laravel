@@ -287,5 +287,12 @@ class Controller extends BaseController
             ->with('subtitle', 'Introduction to Laravel');
     }
 
+    public function resultSearchAdmin()
+    {
+        return view("resultSearchAdmin")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
+
 
 }

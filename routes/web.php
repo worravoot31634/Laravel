@@ -35,6 +35,7 @@ Route::get('login', 'Controller@login');
 Route::get('resultSearch', 'Controller@resultSearch');
 Route::get('resultSearchLogin', 'Controller@resultSearchLogin');
 Route::get('resultSearchOrganization', 'Controller@resultSearchOrganization');
+Route::get('resultSearchAdmin', 'Controller@resultSearchAdmin');
 
 
 Route::get('chatMessage', 'Controller@chatMessage');
