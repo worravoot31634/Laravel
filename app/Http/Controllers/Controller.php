@@ -123,5 +123,16 @@ class Controller extends BaseController
         ->with('title', 'Laravel Testing')
         ->with('subtitle', 'Introduction to Laravel');
     }
+    public function activityLogin(){
+        return view("activityLogin")
+        ->with('title', 'Laravel Testing')
+        ->with('subtitle', 'Introduction to Laravel');
+    }
+    public function activityDetailLogin(){
+        return view("activity_detailLoing")
+        ->with('title', 'Laravel Testing')
+        ->with('subtitle', 'Introduction to Laravel');
+    }
+
 
 }
