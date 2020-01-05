@@ -248,45 +248,21 @@
         }
     </script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-        google.charts.load('current', { 'packages': ['corechart'] });
-        google.charts.setOnLoadCallback(drawChart);
+    <script>
+        function hideNav() {
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("searchMenu").style.display = "block";
 
-        function drawChart() {
+        }
 
-            var data = google.visualization.arrayToDataTable([
-                ['Need', 'Donate'],
-                ['Need', 12000],
-                ['Donate total', 15000],
-            ]);
 
-            var options = {
-                //title: 'My Daily Activities'
-            };
+        function showNav() {
+            document.getElementById("menu").style.display = "block";
+            document.getElementById("searchMenu").style.display = "none";
 
-            var chart = new google.visualization.PieChart(document.getElementById('chart'));
 
-            chart.draw(data, options);
         }
     </script>
 </body>
 
 </html>
-
-
-
-<script>
-    function hideNav() {
-        document.getElementById("menu").style.display = "none";
-        document.getElementById("searchMenu").style.display = "block";
-
-    }
-
-
-    function showNav() {
-        document.getElementById("menu").style.display = "block";
-        document.getElementById("searchMenu").style.display = "none";
-
-
-    }
-</script>
