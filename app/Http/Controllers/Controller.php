@@ -133,6 +133,11 @@ class Controller extends BaseController
         ->with('title', 'Laravel Testing')
         ->with('subtitle', 'Introduction to Laravel');
     }
-
+    public function donateLogin()
+    {
+        return view("donateLogin")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
 
 }
