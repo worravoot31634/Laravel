@@ -30,3 +30,4 @@ Route::get('donate', 'Controller@donate');
 Route::get('myPost', 'Controller@myPost');
 Route::get('reportChart', 'Controller@reportChart');
 Route::get('adminHome', 'Controller@adminHome');
+Route::get('addPet', 'Controller@addPet');
