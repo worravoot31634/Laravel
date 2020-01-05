@@ -148,89 +148,9 @@ background-color: #373143;
 <body id="myPage">
 
 
-
-     <!-- Navbar -->
-    <div id="menu" class="w3-top" style="display: block;">
-        <div class="w3-white w3-card">
-            <a class="w3-bar-item w3-button  w3-hide-large w3-right w3-hover-white" href="javascript:void(0);"
-                onclick="openNav()"><i class="fa fa-bars"></i></a>
-            <a href="home" style="font-size: 20px;" class="w3-bar-item w3-button w3-white"><img width="100"
-                    src="./Images/logo.png"></a>
-            <div style="margin-top: 10px;" class="w3-right w3-hide-medium w3-hide-small w3-animate-right">
-                <a href="" style="font-size: 20px;"
-                    class=" w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>สัตว์เลี้ยง</b></a>
-                <a href="" style="font-size: 20px;"
-                    class=" w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>บริจาค</b></a>
-                <a href="" style="font-size: 20px;"
-                    class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>กิจกรรม</b></a>
-                <div class="w3-dropdown-hover" style="font-size: 20px;">
-                    <button class=" w3-button"><b>Jame Logan</b></button>
-                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                        <a href="myPost" class="w3-bar-item w3-button"><b>โพสต์ของฉัน</b></a>
-                        <a href="chatMessage" class="w3-bar-item w3-button"><b>ประวัติแชท</b></a>
-                        <a href="home" class="w3-bar-item w3-button"><b>ออกจากระบบ</b></a>
-                    </div>
-                </div>
-                <a href="#" style="font-size:18px; margin-right: 10px;" onclick="hideNav()"
-                    class="w3-black w3-circle w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right"
-                    title="Search"><i class="fa fa-search"></i></a>
-            </div>
-        </div>
-
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large ">
-            <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
-            <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
-            <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
-            <div class="w3-dropdown-hover">
-                <button class=" w3-button"><b>Jame Logan</b></button>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="#" class="w3-bar-item w3-button"><b>โพสต์ของฉัน</b></a>
-                    <a href="#" class="w3-bar-item w3-button"><b>ประวัติแชท</b></a>
-                    <a href="#" class="w3-bar-item w3-button"><b>ออกจากระบบ</b></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Navbar Search Hide-->
-    <div id="searchMenu" class="w3-top" style="display: none;">
-        <div class="w3-bar w3-white w3-card">
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white"
-                href="javascript:void(0);" onclick="openNav2()"><i class="fa fa-bars"></i></a>
-            <a href="#" style="font-size: 20px;" class="w3-bar-item w3-button w3-white"><img width="50"
-                    src="./Images/icon/Logo.png"></a>
-            <div style="margin-top: 10px;" class="w3-center w3-hide-small w3-animate-left">
-                <input class="simpleSearch" placeholder="ค้นหา" style="font-size: 20px;" size="100" type="text" />
-                <a href="#" style="font-size:18px; " onclick="hideNav()"
-                    class=" w3-black w3-button w3-hide-small w3-circle" title="Search"><i class="fa fa-search"></i></a>
-                <a href="#" style="font-size:18px; margin-right: 10px;margin-bottom: 4px;" onclick="showNav()"
-                    class="w3-black w3-bar-item w3-button w3-hide-small w3-right w3-circle" title="Search"><i
-                        class="fa fa-close"></i></a>
-            </div>
-        </div>
-
-
-
-        <!-- Navbar on small screens case Search-->
-        <div id="navDemo2" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-            <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
-            <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
-            <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
-            <div class="w3-dropdown-hover">
-                <button class=" w3-button"><b>Jame Logan</b></button>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="#" class="w3-bar-item w3-button"><b>โพสต์ของฉัน</b></a>
-                    <a href="#" class="w3-bar-item w3-button"><b>ประวัติแชท</b></a>
-                    <a href="#" class="w3-bar-item w3-button"><b>ออกจากระบบ</b></a>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
+<?php
+    include('NavbarMember.html');
+    ?>
     <!--Content-->
 
     <!--header text and image of activity-->
@@ -290,8 +210,8 @@ background-color: #373143;
                             <option style="font-size: 20px;" value="2">Cats</option>
                         </select>
                     </div>
-                    
-                    
+
+
                 </div>
                 <div class="w3-row w3-padding">
                     <div class="w3-third">
@@ -303,10 +223,10 @@ background-color: #373143;
                             <option style="font-size: 20px;" value="2">บางแก้ว</option>
                         </select>
                     </div>
-                    
+
                 </div>
                 <div class="w3-row w3-padding">
-                    
+
                     <div class="w3-third">
                         <a style="padding-left: 4px ;font-size: 1.2em;font-weight: bold;">จังหวัด: </a>
                     </div>
@@ -392,7 +312,7 @@ background-color: #373143;
                             <option value="อ่างทอง">อ่างทอง </option>
                             <option value="อื่นๆ">อื่นๆ</option>
                       </select>
-                      
+
                     </div>
                 </div>
                 <div class="w3-row w3-padding">
@@ -402,13 +322,13 @@ background-color: #373143;
                     <div class="w3-twothird">
                         <input class="w3-input" type="text" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required/>
                     </div>
-                    
+
                 </div>
                 <div class="w3-row w3-padding">
                     <a style="padding-left: 4px ;font-size: 1.2em;font-weight: bold;">รายละเอียด: </a>
                 </div>
-                <div class="w3-row w3-padding"> 
-                    <div class="w3-row w3-padding" style="border: 2px solid whitesmoke;border-radius: 12px;"> 
+                <div class="w3-row w3-padding">
+                    <div class="w3-row w3-padding" style="border: 2px solid whitesmoke;border-radius: 12px;">
                         <textarea class="w3-input" rows="4" cols="50" required></textarea>
                     </div>
                 </div>
@@ -418,7 +338,7 @@ background-color: #373143;
                     <button class="open-button w3-right" style="border-radius: 14px;" id="btnChat" onclick="openForm()"><img width="20px" src="./Images/icon/sendIcon.png">
                         <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">โพสต์</a></button>
 
-                   
+
                     </div>
                 </div>
                     <br>

@@ -36,76 +36,12 @@
 
 
 
-    <!-- Navbar -->
-    <div id="menu" class="w3-top" style="display: block;">
-        <div class="w3-bar w3-white w3-card">
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white"
-                href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-            <a href="home" style="font-size: 20px;" class="w3-bar-item w3-button w3-white"><img width="50"
-                    src="./Images/icon/Logo.png"></a>
-            <div style="margin-top: 10px;" class="w3-right w3-hide-small w3-animate-right">
-                <a href="pet" style="font-size: 20px;" class=" w3-bar-item w3-button w3-hide-small"><b>สัตว์เลี้ยง</b></a>
-                <a href="donate" style="font-size: 20px;" class=" w3-bar-item w3-button w3-hide-small"><b>บริจาค</b></a>
-                <a href="activity" style="font-size: 20px;" class="w3-bar-item w3-button w3-hide-small"><b>กิจกรรม</b></a>
-                <a href="login" style="font-size: 20px;"
-                    class="w3-bar-item w3-button w3-hide-small "><b>เข้าสู่ระบบ</b></a>
-                <a href="register" style="font-size: 20px; "
-                    class="w3-bar-item w3-button w3-hide-small "><b>สมัครสมาชิก</b></a>
-                <a href="#" style="font-size:18px; margin-right: 10px;" onclick="hideNav()"
-                    class="w3-black w3-circle w3-bar-item w3-button w3-hide-small w3-right" title="Search"><i
-                        class="fa fa-search"></i></a>
-            </div>
-        </div>
-
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium ">
-            <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
-            <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
-            <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
-            <a href="#pricing " class="w3-bar-item w3-button ">เข้าสู่ระบบ</a>
-            <a href="#contact " class="w3-bar-item w3-button ">สมัครสมาชิก</a>
-
-        </div>
-    </div>
-
-
-
-    <!-- Navbar Search Hide-->
-    <div id="searchMenu" class="w3-top" style="display: none;">
-        <div class="w3-bar w3-white w3-card">
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white"
-                href="javascript:void(0);" onclick="openNav2()"><i class="fa fa-bars"></i></a>
-            <a href="#" style="font-size: 20px;" class="w3-bar-item w3-button w3-white"><img width="50"
-                    src="./Images/icon/Logo.png"></a>
-            <div style="margin-top: 10px;" class="w3-center w3-hide-small w3-animate-left">
-                <input class="simpleSearch" placeholder="ค้นหา" style="font-size: 20px;" size="100" type="text" />
-                <a href="resultSearch" style="font-size:18px; " onclick="hideNav()"
-                    class=" w3-black w3-button w3-hide-small w3-circle" title="Search"><i class="fa fa-search"></i></a>
-                <a href="#" style="font-size:18px; margin-right: 10px;margin-bottom: 4px;" onclick="showNav()"
-                    class="w3-black w3-bar-item w3-button w3-hide-small w3-right w3-circle" title="Search"><i
-                        class="fa fa-close"></i></a>
-            </div>
-        </div>
-
-
-
-        <!-- Navbar on small screens case Search-->
-        <div id="navDemo2" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-            <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
-            <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
-            <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
-            <a href="#pricing " class="w3-bar-item w3-button ">เข้าสู่ระบบ</a>
-            <a href="#contact " class="w3-bar-item w3-button ">สมัครสมาชิก</a>
-
-        </div>
-
-    </div>
-
-
-
-
+<?php
+    include('NavbarMember.html');
+    ?>
 
     <!--Fix 80 percent Screen-->
+    <br>
     <table width="80%" align="center">
 
 
@@ -124,14 +60,14 @@
         <tr>
             <td>
                     <div class="w3-half">
-                        
+
                         <div class="w3-container w3-mobile">
                         <input class="advanceSearch" placeholder="ค้นหา" style="font-size: 20px;" size="100" type="text" />
-                        <a href="#" style="font-size:18px; background-color: #726292; color: white;" 
+                        <a href="#" style="font-size:18px; background-color: #726292; color: white;"
                             class="w3-right w3-button w3-circle" title="Search"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
-                    <div class="w3-half" style="padding: 4px;">      
+                    <div class="w3-half" style="padding: 4px;">
                         <div class="w3-third  w3-container w3-mobile" style="padding: 4px;">
                             <div style="display: flex;">
                                 <a style="background-color: green;" class="statusCircle"></a>
@@ -150,7 +86,7 @@
                                 <a style="padding-left: 5px;font-weight: bold; font-size: 18px;">มีผู้รับเลี้ยงแล้ว</a>
                             </div>
                         </div>
-                            
+
                 </div>
                 <br><br><br>
                 <div class="w3-row">
@@ -220,7 +156,7 @@
                     <div class="w3-container w3-border">
                         <div style="padding:10px;" class="w3-quarter w3-container">
                             <div class="w3-card-4 test" style="width:100%;max-width:300px;">
-                                <a href="petDetail"><img src="./Images/dogPic.png" alt="Avatar" style="width:100%;"></a>
+                                <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
                                 <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
                                     <img  width="35px" src="./Images/userPic.png">
                                     <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">Logan</a>
@@ -231,7 +167,7 @@
                         </div>
                         <div style="padding:10px;" class="w3-quarter w3-container">
                             <div class="w3-card-4 test" style="width:100%;max-width:300px;">
-                                <a href="petDetail"><img src="./Images/dogPic.png" alt="Avatar" style="width:100%;"></a>
+                                <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
                                 <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
                                     <img  width="35px" src="./Images/userPic.png">
                                     <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">Logan</a>
@@ -242,18 +178,18 @@
                         </div>
                         <div style="padding:10px;" class="w3-quarter w3-containe">
                             <div class="w3-card-4 test" style="width:100%;max-width:300px;">
-                                <a href="petDetail"><img src="./Images/dogPic.png" alt="Avatar" style="width:100%;"></a>
+                                <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
                                 <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
                                     <img  width="35px" src="./Images/userPic.png">
                                     <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">Logan</a>
-                                    
+
                                     <a style="background-color: yellow;" class="w3-right statusCircle"></a><!--<p>Architect and engineer</p>-->
                                 </div>
                             </div>
                         </div>
                         <div style="padding:10px;" class="w3-quarter w3-container">
                             <div class="w3-card-4 test" style="width:100%;max-width:300px;">
-                                <a href="petDetail"><img src="./Images/dogPic.png" alt="Avatar" style="width:100%;"></a>
+                                <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
                                 <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
                                     <img  width="35px" src="./Images/userPic.png">
                                     <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">Logan</a>
@@ -264,7 +200,7 @@
                         </div>
                         <div style="padding:10px;" class="w3-quarter w3-container">
                             <div class="w3-card-4 test" style="width:100%;max-width:300px;">
-                                <a href="petDetail"> <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;"></a>
+                                <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
                                 <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
                                     <img  width="35px" src="./Images/userPic.png">
                                     <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">Logan</a>
@@ -276,7 +212,7 @@
 
                         <div style="padding:10px;" class="w3-quarter w3-container">
                             <div class="w3-card-4 test" style="width:100%;max-width:300px;">
-                                <a href="petDetail"> <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;"></a>
+                                <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
                                 <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
                                     <img  width="35px" src="./Images/userPic.png">
                                     <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">Logan</a>
@@ -288,7 +224,7 @@
 
                         <div style="padding:10px;" class="w3-quarter w3-container">
                             <div class="w3-card-4 test" style="width:100%;max-width:300px;">
-                                <a href="petDetail"> <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;"></a>
+                                <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
                                 <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
                                     <img  width="35px" src="./Images/userPic.png">
                                     <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">Logan</a>
