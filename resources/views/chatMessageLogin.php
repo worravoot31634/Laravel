@@ -737,7 +737,7 @@ body {
 <body id="myPage">
 
 <?php
-    include('NavbarOrganization.html');
+    include('NavbarMember.html');
     ?>
 <!--Content-->
 

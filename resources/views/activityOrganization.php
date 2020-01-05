@@ -39,85 +39,13 @@
 
 <body id="myPage">
 
-
-
-    <!-- Navbar -->
-    <div id="menu" class="w3-top" style="display: block;">
-        <div class="w3-bar w3-white w3-card">
-            <a class="w3-bar-item w3-button  w3-hide-large w3-right w3-hover-white" href="javascript:void(0);"
-                onclick="openNav()"><i class="fa fa-bars"></i></a>
-            <a href="#" style="font-size: 20px;" class="w3-bar-item w3-button w3-white"><img width="50"
-                    src="./Images/icon/Logo.png"></a>
-            <div style="margin-top: 10px;" class="w3-right w3-hide-medium w3-hide-small w3-animate-right">
-              <a href="" style="font-size: 20px;"
-                  class=" w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>เขียนกิจกรรม</b></a>
-              <a href="" style="font-size: 20px;"
-                  class=" w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>ขอรับบริจาค</b></a>
-              <a href="" style="font-size: 20px;"
-                  class=" w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>เขียนโพสต์</b></a>
-                <a href="" style="font-size: 20px;"
-                    class=" w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>สัตว์เลี้ยง</b></a>
-                <a href="" style="font-size: 20px;"
-                    class=" w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>บริจาค</b></a>
-                <a href="" style="font-size: 20px;"
-                    class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>กิจกรรม</b></a>
-                <a href="" style="font-size: 20px;"
-                        class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><img src="./Images/source/2.png" style="width: 45px;height: auto;"/></a>
-                <a href="" style="font-size: 20px;"
-                        class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><font color="#ac00e6"><b>James Logan</b></font></a>
-                <a href="#" style="font-size:18px; margin-right: 10px;" onclick="hideNav()"
-                    class="w3-black w3-circle w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right"
-                    title="Search"><i class="fa fa-search"></i></a>
-            </div>
-        </div>
-
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large ">
-          <a href="#team " class="w3-bar-item w3-button ">เขียนกิจกรรม</a>
-            <a href="#team " class="w3-bar-item w3-button ">ขอบริจาค</a>
-            <a href="#team " class="w3-bar-item w3-button ">เขียนโพสต์</a>
-            <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
-            <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
-            <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
-        </div>
-    </div>
-
-
-
-    <!-- Navbar Search Hide-->
-    <div id="searchMenu" class="w3-top" style="display: none;">
-        <div class="w3-bar w3-white w3-card">
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white"
-                href="javascript:void(0);" onclick="openNav2()"><i class="fa fa-bars"></i></a>
-            <a href="#" style="font-size: 20px;" class="w3-bar-item w3-button w3-white"><img width="50"
-                    src="./Images/icon/Logo.png"></a>
-            <div style="margin-top: 10px;" class="w3-center w3-hide-small w3-animate-left">
-                <input class="simpleSearch" placeholder="ค้นหา" style="font-size: 20px;" size="100" type="text" />
-                <a href="#" style="font-size:18px; " onclick="hideNav()"
-                    class=" w3-black w3-button w3-hide-small w3-circle" title="Search"><i class="fa fa-search"></i></a>
-                <a href="#" style="font-size:18px; margin-right: 10px;margin-bottom: 4px;" onclick="showNav()"
-                    class="w3-black w3-bar-item w3-button w3-hide-small w3-right w3-circle" title="Search"><i
-                        class="fa fa-close"></i></a>
-            </div>
-        </div>
-
-
-
-        <!-- Navbar on small screens case Search-->
-        <div id="navDemo2" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-          <a href="#team " class="w3-bar-item w3-button ">เขียนกิจกรรม</a>
-            <a href="#team " class="w3-bar-item w3-button ">ขอบริจาค</a>
-            <a href="#team " class="w3-bar-item w3-button ">เขียนโพสต์</a>
-            <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
-            <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
-            <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
-
-        </div>
-    </div>
+<?php
+    include('NavbarOrganization.html');
+    ?>
+    <!--Content-->
 
     <!--header text and image of activity-->
     <center>
-      <br>
         <div class="w3-container" style="margin-top:40px;display:inline-block">
             <img src="./Images/icon/cat.png" alt="" srcset="" width="50px">
             <div style="display:inline-block;">
@@ -136,7 +64,7 @@
             <!--row  half left side-->
 
             <div class="w3-half" style="padding: 10px;">
-                <a href="activityDetail" class="activity-content-link">
+                <a href="activityDetailOrganization" class="activity-content-link">
                     <div class="w3-half colorActivity" style="height: 210px;">
                         <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 210px;">
                     </div> <!-- end of img -->
@@ -170,7 +98,7 @@
         <!--row  half right side-->
 
         <div class="w3-half" style="padding: 10px;">
-            <a href="activityDetail" class="activity-content-link">
+            <a href="activityDetailOrganization" class="activity-content-link">
                 <div class="w3-half colorActivity" style="height: 210px;">
                     <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 210px;">
                 </div> <!-- end of img -->
@@ -215,7 +143,7 @@
             <!--row  half left side-->
 
             <div class="w3-half" style="padding: 10px;">
-                <a href="activityDetail" class="activity-content-link">
+                <a href="activityDetailOrganization" class="activity-content-link">
                     <div class="w3-half colorActivity" style="height: 210px;">
                         <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 210px;">
                     </div> <!-- end of img -->
@@ -249,7 +177,7 @@
         <!--row  half right side-->
 
         <div class="w3-half" style="padding: 10px;">
-            <a href="activityDetail" class="activity-content-link">
+            <a href="activityDetailOrganization" class="activity-content-link">
                 <div class="w3-half colorActivity" style="height: 210px;">
                     <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 210px;">
                 </div> <!-- end of img -->
@@ -294,7 +222,7 @@
             <!--row  half left side-->
 
             <div class="w3-half" style="padding: 10px;">
-                <a href="activityDetail" class="activity-content-link">
+                <a href="activityDetailOrganization" class="activity-content-link">
                     <div class="w3-half colorActivity" style="height: 210px;">
                         <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 210px;">
                     </div> <!-- end of img -->
@@ -328,7 +256,7 @@
         <!--row  half right side-->
 
         <div class="w3-half" style="padding: 10px;">
-            <a href="activityDetail" class="activity-content-link">
+            <a href="activityDetailOrganization" class="activity-content-link">
                 <div class="w3-half colorActivity" style="height: 210px;">
                     <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 210px;">
                 </div> <!-- end of img -->
@@ -366,27 +294,61 @@
     <!--end of container-->
 
     <!--end Content-->
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center ">
-        <h4>Follow Us</h4>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Facebook "><i
-                class="fa fa-facebook "></i></a>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Twitter "><i
-                class="fa fa-twitter "></i></a>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Google + "><i
-                class="fa fa-google-plus "></i></a>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Google + "><i
-                class="fa fa-instagram "></i></a>
-        <a class="w3-button w3-large w3-teal w3-hide-small " href="javascript:void(0) " title="Linkedin "><i
-                class="fa fa-linkedin "></i></a>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp " target="_blank ">w3.css</a></p>
+    
+
+    <style>
+        .w3-8c71c0 {
+          background-color: #8c71c0;
+        }
+
+        .w3-564b6c {
+          background-color: #564b6c;
+        }
+
+        .w3-373143 {
+          background-color: #373143;
+        }
+      </style>
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-32  w3-center " style="background-image: url('./Images/footer.png');">
+        <table align=center>
+          <tr>
+            <td style="height: 3cm;">
+
+            </td>
+          </tr>
+
+          <tr style="width:100%;">
+            <td>
+              <p style="font-size: 30px;color: #E2E0E0;">
+                มาร่วมเป็นส่วนหนึ่งกับเรา&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <td>
+          </tr>
+          <tr style="width:100%;">
+
+            <td>
+              <p style="font-size: 30px; color: #E2E0E0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;มีน้องๆมากมายรอคุณอยู่</p>
+            </td>
+          </tr>
+        </table>
+      
+        <a class="w3-button w3-8c71c0 w3-round-xxlarge" href="javascript:void(0) " title="Facebook "><i
+            class="fa fa-facebook "></i></a>
+        <a class="w3-button w3-8c71c0 w3-round-xxlarge" href="javascript:void(0) " title="Twitter "><i
+            class="fa fa-twitter "></i></a>
+        <a class="w3-button w3-8c71c0 w3-round-xxlarge" href="javascript:void(0) " title="Google + "><i
+            class="fa fa-google-plus "></i></a>
+        <p></p>
 
         <div style="position:relative;bottom:100px;z-index:1; " class="w3-tooltip w3-right ">
-            <span class="w3-text w3-padding w3-teal w3-hide-small ">Go To Top</span>
-            <a class="w3-button w3-theme " href="#myPage "><span class="w3-xlarge ">
-                    <i class="fa fa-chevron-circle-up "></i></span></a>
+          <span class="w3-text w3-padding  w3-8c71c0 w3-hide-small  " style="color: #E2E0E0;">Go To Top</span>
+          <a class="w3-button w3-theme " href="#myPage "><span class="w3-xlarge ">
+              <i class="fa fa-chevron-circle-up "></i></span></a>
         </div>
-    </footer>
+      </footer>
+
 
     <script>
         // Script for side navigation
@@ -434,15 +396,15 @@
         }
     </script>
 
-  </body>
+</body>
 
 
 
-  </html>
+</html>
 
 
 
-  <script>
+<script>
     function hideNav() {
         document.getElementById("menu").style.display = "none";
         document.getElementById("searchMenu").style.display = "block";
@@ -456,4 +418,4 @@
 
 
     }
-  </script>
+</script>
