@@ -26,11 +26,17 @@ Route::get('editPetDetail', 'Controller@editPetDetail');
 Route::get('activity', 'Controller@activity');
 Route::get('activityOrganization', 'Controller@activityOrganization');
 Route::get('activityDetail', 'Controller@activityDetail');
+Route::get('activityDetailLogin', 'Controller@activityDetailLogin');
 Route::get('activityDetailOrganization', 'Controller@activityDetailOrganization');
 Route::get('writePost', 'Controller@writePost');
 Route::get('writeDonate', 'Controller@writeDonate');
 Route::get('login', 'Controller@login');
+
 Route::get('resultSearch', 'Controller@resultSearch');
+Route::get('resultSearchLogin', 'Controller@resultSearchLogin');
+Route::get('resultSearchOrganization', 'Controller@resultSearchOrganization');
+
+
 Route::get('chatMessage', 'Controller@chatMessage');
 Route::get('chatMessageLogin', 'Controller@chatMessageLogin');
 Route::get('donate', 'Controller@donate');
@@ -46,6 +52,10 @@ Route::get('activityLogin', 'Controller@activityLogin');
 Route::get('activityDetailLogin', 'Controller@activityDetailLogin');
 Route::get('donateLogin', 'Controller@donateLogin');
 Route::get('addPetLogin', 'Controller@addPetLogin');
+Route::get('editAddPetLogin', 'Controller@editAddPetLogin');
+Route::get('editAddPetOrganization', 'Controller@editAddPetOrganization');
 Route::get('petLogin', 'Controller@petLogin');
 Route::get('petDetailLogin', 'Controller@petDetailLogin');
 Route::get('editPetDetailLogin', 'Controller@editPetDetailLogin');
+Route::get('editDonate', 'Controller@editDonate');
+Route::get('editPost', 'Controller@editPost');

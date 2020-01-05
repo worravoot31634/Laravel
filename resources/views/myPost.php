@@ -77,7 +77,7 @@
                 <div class="w3-card-4 test" style="width:100%;max-width:300px;">
                     <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
                     <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
-                        <button class="btnEdit">แก้ไข</button>
+                    <a href="editAddPetOrganization"><button class="btnEdit">แก้ไข</button></a>
                         <a style="background-color: red;" class="w3-right statusCircle"></a>
                         <!--<p>Architect and engineer</p>-->
                     </div>
@@ -87,7 +87,7 @@
                 <div class="w3-card-4 test" style="width:100%;max-width:300px;">
                     <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
                     <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
-                        <button class="btnEdit">แก้ไข</button>
+                    <a href="editAddPetOrganization"><button class="btnEdit">แก้ไข</button></a>
                         <a style="background-color: green;" class="w3-right statusCircle"></a>
                         <!--<p>Architect and engineer</p>-->
                     </div>
@@ -97,7 +97,7 @@
                 <div class="w3-card-4 test" style="width:100%;max-width:300px;">
                     <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
                     <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
-                        <button class="btnEdit">แก้ไข</button>
+                    <a href="editAddPetOrganization"><button class="btnEdit">แก้ไข</button></a>
 
                         <a style="background-color: yellow;" class="w3-right statusCircle"></a>
                         <!--<p>Architect and engineer</p>-->
@@ -108,7 +108,7 @@
                 <div class="w3-card-4 test" style="width:100%;max-width:300px;">
                     <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
                     <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
-                        <button class="btnEdit">แก้ไข</button>
+                    <a href="editAddPetOrganization"><button class="btnEdit">แก้ไข</button></a>
                         <a style="background-color: green;" class="w3-right statusCircle"></a>
                         <!--<p>Architect and engineer</p>-->
                     </div>
@@ -160,8 +160,8 @@
 
                         </p>
                         <div>
-                            <button class="btnEdit" style="margin: 5px;">รายละเอียดการบริจาค</button>
-                            <button class="btnEdit" style="width: 20%;">แก้ไข</button>
+                            <a href="reportChart"><button class="btnEdit" style="margin: 5px;">รายละเอียดการบริจาค</button></a>
+                            <a href="editDonate"><button class="btnEdit" style="width: 20%;margin: 5px;">แก้ไข</button></a>
                         </div>
                 </a></div><!-- end of text -->
         </div> <!-- end of row  half left side-->
@@ -195,8 +195,8 @@
 
                     </p>
                     <div>
-                        <button class="btnEdit" style="margin: 5px;">รายละเอียดการบริจาค</button>
-                        <button class="btnEdit" style="width: 20%;">แก้ไข</button>
+                    <a href="reportChart"><button class="btnEdit" style="margin: 5px;">รายละเอียดการบริจาค</button></a>
+                    <a href="editDonate"><button class="btnEdit" style="width: 20%;margin: 5px;">แก้ไข</button></a>
                     </div>
             </a></div><!-- end of text -->
     </div> <!-- end of row  half right side-->
@@ -250,7 +250,7 @@
                         </p>
                         <div>
 
-                            <button class="btnEdit" style="width: 20%;margin: 5px;">แก้ไข</button>
+                            <a href="editPost"><button class="btnEdit" style="width: 20%;margin: 5px;">แก้ไข</button></a>
                         </div>
                 </a></div><!-- end of text -->
         </div> <!-- end of row  half left side-->
@@ -284,7 +284,7 @@
                     </p>
                     <div>
 
-                        <button class="btnEdit" style="width: 20%;margin: 5px;">แก้ไข</button>
+                    <a href="editPost"><button class="btnEdit" style="width: 20%;margin: 5px;">แก้ไข</button></a>
                     </div>
             </a></div><!-- end of text -->
     </div> <!-- end of row  half right side-->

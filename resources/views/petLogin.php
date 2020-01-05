@@ -156,7 +156,7 @@
                     <div class="w3-container w3-border">
                         <div style="padding:10px;" class="w3-quarter w3-container">
                             <div class="w3-card-4 test" style="width:100%;max-width:300px;">
-                                <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
+                                <a href="petDetailLogin"><img src="./Images/dogPic.png" alt="Avatar" style="width:100%;"></a>
                                 <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
                                     <img  width="35px" src="./Images/userPic.png">
                                     <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">Logan</a>
@@ -167,7 +167,7 @@
                         </div>
                         <div style="padding:10px;" class="w3-quarter w3-container">
                             <div class="w3-card-4 test" style="width:100%;max-width:300px;">
-                                <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
+                            <a href="petDetailLogin"><img src="./Images/dogPic.png" alt="Avatar" style="width:100%;"></a>
                                 <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
                                     <img  width="35px" src="./Images/userPic.png">
                                     <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">Logan</a>
@@ -178,7 +178,7 @@
                         </div>
                         <div style="padding:10px;" class="w3-quarter w3-containe">
                             <div class="w3-card-4 test" style="width:100%;max-width:300px;">
-                                <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
+                            <a href="petDetailLogin"><img src="./Images/dogPic.png" alt="Avatar" style="width:100%;"></a>
                                 <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
                                     <img  width="35px" src="./Images/userPic.png">
                                     <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">Logan</a>
@@ -189,7 +189,7 @@
                         </div>
                         <div style="padding:10px;" class="w3-quarter w3-container">
                             <div class="w3-card-4 test" style="width:100%;max-width:300px;">
-                                <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
+                            <a href="petDetailLogin"><img src="./Images/dogPic.png" alt="Avatar" style="width:100%;"></a>
                                 <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
                                     <img  width="35px" src="./Images/userPic.png">
                                     <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">Logan</a>
@@ -200,7 +200,7 @@
                         </div>
                         <div style="padding:10px;" class="w3-quarter w3-container">
                             <div class="w3-card-4 test" style="width:100%;max-width:300px;">
-                                <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
+                            <a href="petDetailLogin"><img src="./Images/dogPic.png" alt="Avatar" style="width:100%;"></a>
                                 <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
                                     <img  width="35px" src="./Images/userPic.png">
                                     <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">Logan</a>
@@ -212,7 +212,7 @@
 
                         <div style="padding:10px;" class="w3-quarter w3-container">
                             <div class="w3-card-4 test" style="width:100%;max-width:300px;">
-                                <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
+                            <a href="petDetailLogin"><img src="./Images/dogPic.png" alt="Avatar" style="width:100%;"></a>
                                 <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
                                     <img  width="35px" src="./Images/userPic.png">
                                     <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">Logan</a>
@@ -224,7 +224,7 @@
 
                         <div style="padding:10px;" class="w3-quarter w3-container">
                             <div class="w3-card-4 test" style="width:100%;max-width:300px;">
-                                <img src="./Images/dogPic.png" alt="Avatar" style="width:100%;">
+                            <a href="petDetailLogin"><img src="./Images/dogPic.png" alt="Avatar" style="width:100%;"></a>
                                 <div class="w3-container" style="padding-top: 5px;padding-bottom: 5px;">
                                     <img  width="35px" src="./Images/userPic.png">
                                     <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">Logan</a>
@@ -247,28 +247,59 @@
 
 <br><br>
 
+<style>
+        .w3-8c71c0 {
+          background-color: #8c71c0;
+        }
 
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center ">
-        <h4>Follow Us</h4>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Facebook "><i
-                class="fa fa-facebook "></i></a>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Twitter "><i
-                class="fa fa-twitter "></i></a>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Google + "><i
-                class="fa fa-google-plus "></i></a>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Google + "><i
-                class="fa fa-instagram "></i></a>
-        <a class="w3-button w3-large w3-teal w3-hide-small " href="javascript:void(0) " title="Linkedin "><i
-                class="fa fa-linkedin "></i></a>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp " target="_blank ">w3.css</a></p>
+        .w3-564b6c {
+          background-color: #564b6c;
+        }
+
+        .w3-373143 {
+          background-color: #373143;
+        }
+      </style>
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-32  w3-center " style="background-image: url('./Images/footer.png');">
+        <table align=center>
+          <tr>
+            <td style="height: 3cm;">
+
+            </td>
+          </tr>
+
+          <tr style="width:100%;">
+            <td>
+              <p style="font-size: 30px;color: #E2E0E0;">
+                มาร่วมเป็นส่วนหนึ่งกับเรา&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <td>
+          </tr>
+          <tr style="width:100%;">
+
+            <td>
+              <p style="font-size: 30px; color: #E2E0E0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;มีน้องๆมากมายรอคุณอยู่</p>
+            </td>
+          </tr>
+        </table>
+       
+        <a class="w3-button w3-8c71c0 w3-round-xxlarge" href="javascript:void(0) " title="Facebook "><i
+            class="fa fa-facebook "></i></a>
+        <a class="w3-button w3-8c71c0 w3-round-xxlarge" href="javascript:void(0) " title="Twitter "><i
+            class="fa fa-twitter "></i></a>
+        <a class="w3-button w3-8c71c0 w3-round-xxlarge" href="javascript:void(0) " title="Google + "><i
+            class="fa fa-google-plus "></i></a>
+        <p></p>
 
         <div style="position:relative;bottom:100px;z-index:1; " class="w3-tooltip w3-right ">
-            <span class="w3-text w3-padding w3-teal w3-hide-small ">Go To Top</span>
-            <a class="w3-button w3-theme " href="#myPage "><span class="w3-xlarge ">
-                    <i class="fa fa-chevron-circle-up "></i></span></a>
+          <span class="w3-text w3-padding  w3-8c71c0 w3-hide-small  " style="color: #E2E0E0;">Go To Top</span>
+          <a class="w3-button w3-theme " href="#myPage "><span class="w3-xlarge ">
+              <i class="fa fa-chevron-circle-up "></i></span></a>
         </div>
-    </footer>
+      </footer>
+
 
     <script>
         // Script for side navigation

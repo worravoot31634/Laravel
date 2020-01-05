@@ -149,7 +149,7 @@ background-color: #373143;
 
 
 <?php
-    include('NavbarMember.html');
+    include('NavbarOrganization.html');
     ?>
     <!--Content-->
 
@@ -158,7 +158,7 @@ background-color: #373143;
         <div class="container" style="margin-top:40px;display:inline-block">
             <img src="./Images/icon/cat.png" alt="" srcset="" width="50px">
             <div style="display:inline-block;">
-                <p style="font-size: 30px;font-weight:bold;vertical-align: middle;">โพสต์หาเจ้าของให้น้อง</p>
+                <p style="font-size: 30px;font-weight:bold;vertical-align: middle;">แก้ไขข้อมูลโพสต์</p>
             </div>
         </div>
     </center>
@@ -336,7 +336,7 @@ background-color: #373143;
 
                 <div class="w3-row w3-padding">
                     <button class="open-button w3-right" style="border-radius: 14px;" id="btnChat" onclick="openForm()"><img width="20px" src="./Images/icon/sendIcon.png">
-                        <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">โพสต์</a></button>
+                        <a style="padding-left: 4px ;font-size: 1.3em;font-weight: bold;">บันทึก</a></button>
 
 
                     </div>
