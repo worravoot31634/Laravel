@@ -213,7 +213,9 @@
                                 <p class="textPositionAdRegis">หมายเลขโทรศัพท์</p>
                                 <center><input type="phone" name="fileOrganize" id=""
                                         style="border:none;background-color: #ffffff;" class="inputRegis"
-                                        placeholder="XXX-XXX-XXXX" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+                                        placeholder="0812345678"
+                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                        required>
                                 </center>
                             </div>
                         </div>
@@ -281,7 +283,8 @@
 
             <p class="textPositionAdRegis">หมายเลขโทรศัพท์</p>
             <center><input type="phone" name="fileOrganize" id="" style="border:none;background-color: #ffffff;"
-                    class="inputRegis" placeholder="XXX-XXX-XXXX" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+                    class="inputRegis"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
             </center>
 
             <p class="textAreaPositionAdRegis">ที่อยู่</p>
