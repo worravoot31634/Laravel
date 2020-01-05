@@ -139,5 +139,11 @@ class Controller extends BaseController
             ->with('title', 'Laravel Testing')
             ->with('subtitle', 'Introduction to Laravel');
     }
+    public function addPetLogin()
+    {
+        return view("addPetLogin")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
 
 }

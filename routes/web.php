@@ -35,3 +35,4 @@ Route::get('adminRegis', 'Controller@adminRegis');
 Route::get('activityLogin', 'Controller@activityLogin');
 Route::get('activityDetailLogin', 'Controller@activityDetailLogin');
 Route::get('donateLogin', 'Controller@donateLogin');
+Route::get('addPetLogin', 'Controller@addPetLogin');
