@@ -57,6 +57,13 @@ class Controller extends BaseController
             ->with('subtitle', 'Introduction to Laravel');
     }
 
+    public function activityDetailLogin()
+    {
+        return view("activityDetailLogin")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
+
     public function activityDetailOrganization()
     {
         return view("activityDetailOrganization")
@@ -184,11 +191,7 @@ class Controller extends BaseController
         ->with('title', 'Laravel Testing')
         ->with('subtitle', 'Introduction to Laravel');
     }
-    public function activityDetailLogin(){
-        return view("activity_detailLoing")
-        ->with('title', 'Laravel Testing')
-        ->with('subtitle', 'Introduction to Laravel');
-    }
+   
     public function donateLogin()
     {
         return view("donateLogin")
@@ -201,6 +204,21 @@ class Controller extends BaseController
             ->with('title', 'Laravel Testing')
             ->with('subtitle', 'Introduction to Laravel');
     }
+
+    public function editAddPetLogin()
+    {
+        return view("editAddPetLogin")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
+
+    public function editAddPetOrganization()
+    {
+        return view("editAddPetOrganization")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
+
     public function petLogin()
     {
         return view("petLogin")
@@ -240,5 +258,41 @@ class Controller extends BaseController
             ->with('title', 'Laravel Testing')
             ->with('subtitle', 'Introduction to Laravel');
     }
+
+    public function resultSearchLogin()
+    {
+        return view("resultSearchLogin")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
+
+    public function resultSearchOrganization()
+    {
+        return view("resultSearchOrganization")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
+
+    public function editDonate()
+    {
+        return view("editDonate")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
+
+    public function editPost()
+    {
+        return view("editPost")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
+
+    public function resultSearchAdmin()
+    {
+        return view("resultSearchAdmin")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
+
 
 }

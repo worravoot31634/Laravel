@@ -20,7 +20,6 @@
 
 <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="CSS/CustomCss.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
     .activity-content-link {
@@ -41,91 +40,99 @@
     .pragraph {
         font-size: 20px;
     }
-
-    .submitClass {
-        background-color: #786898;
-        border: none;
-        width: 30%;
-        color: #FFFFFF;
-        border-radius: 4px;
-        font-size: 18px;
-    }
-
-    .submitClass:hover {
-        background-color: #594481;
-    }
 </style>
 
 <body id="myPage">
 
+
 <?php
-    include('NavbarOrganization.html');
+    include('NavbarMember.html');
     ?>
-
-
-
+    
     <!--Content-->
-    <div>
+
+    <center>
+        <h1 style="margin-top: 50px;">Where can I get some ?</h1>
         <br>
-        <br><br>
-        <center><b><p style="font-size:35px;">เขียนกิจกรรม</p></b></center>
+        <img src="./Images/new1.jpg" alt="" srcset="" width="80%">
+    </center>
+
+    <div style="width: 80%;display: table;width: 80%;" class="contentCenter">
+
+        <p class="pragraph">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+            alteration in
+            some form, by injected humour, or randomised words which don't look even slightly believable. If you
+            are
+            going
+            to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+            middle
+            of
+            text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
+            making
+            this
+            the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
+            with a
+            handful
+            of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+        </p>
+
+        <p class="pragraph">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+            alteration in
+            some form, by injected humour, or randomised words which don't look even slightly believable. If you
+            are
+            going
+            to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+            middle
+            of
+            text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
+            making
+            this
+            the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
+            with a
+            handful
+            of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+        </p>
+
+        <p class="pragraph">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+            alteration in
+            some form, by injected humour, or randomised words which don't look even slightly believable. If you
+            are
+            going
+            to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+            middle
+            of
+            text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
+            making
+            this
+            the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
+            with a
+            handful
+            of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+        </p>
+
     </div>
-    <form action="" method="post" enctype="multipart/form-data">
-        <div class="container" style="width: 80%;">
-            <div class="row w3-border" style="margin-top: 50px;margin-bottom: 50px;">
-                <div class="w3-half w3-center">
-                    <img src="./Images/source/picture.png" alt="" srcset="" width="50%">
-                    <div style="clear:both;">
-                        <input type="file" value="โพสต์" class="submitClass" style="margin-bottom: 10px;">
-                    </div>
-
-                </div>
-
-
-                <div class="w3-half" style="background-color: #E2E0E0;">
-                    <div style="display:inline-block;margin-top: 10px;">
-                        <img src="./Images/new1.jpg" alt="" srcset="" width="100%"
-                            style="border-radius: 100%;width: 40px;height: 40px;float: left;margin-right: 5px;margin-left:5px;">
-                    </div>
-                    <div style="display: inline-block;">
-                        <b><p class="w3-left" style="font-size: 20px;">Jame Logan</p></b>
-                    </div>
-
-                    <div>
-                       <b> <p class="w3-left" style="font-size: 25px;margin-left: 30px;">เรื่อง</p></b>
-                    </div>
-
-                    <center>
-                        <div class="w3-row" style="width: 80%;">
-                            <p><input type="text" style="width: 100%;border-radius: 5px;" class="w3-border" rows="15"
-                                    name="comment"></textarea>
-                            </p>
-
-                         
-                        </div>
-                    </center>
-
-
-
-                    <div>
-                        <b><p class="w3-left" style="font-size: 25px;margin-left: 30px;">รายละเอียด</p></b>
-                    </div>
-                    <center>
-                        <div class="w3-row" style="width: 80%;">
-                            <p><textarea style="width: 100%;border-radius: 5px;" class="w3-border" rows="15"
-                                    name="comment"></textarea>
-                            </p>
-
-                            <input type="submit" value="โพสต์" class="submitClass"
-                                style="float:right;margin-bottom: 10px;">
-                        </div>
-                    </center>
-                </div>
-                <!--end of w3-half right-->
+    <br>
+    <div class="container">
+        <div class="row">
+            <div>
+                <h6 style="font-size:20px;display: inline-block;">Post by </h6> &nbsp;&nbsp;
+            </div>
+            <div>
+                <img src="./Images/source/2.png" style="width: 30px;height: 30px;" alt="" srcset="">
+            </div>
+            <div>
+                &nbsp;&nbsp;<h6 style="font-size:20px;display: inline-block;">Jame Logan</h6>
             </div>
         </div>
-    </form>
- 
+    </div>
+    <br>
+    <!--end Content-->
+
+
+
     <style>
         .w3-8c71c0 {
           background-color: #8c71c0;
@@ -163,6 +170,7 @@
             </td>
           </tr>
         </table>
+       
         <a class="w3-button w3-8c71c0 w3-round-xxlarge" href="javascript:void(0) " title="Facebook "><i
             class="fa fa-facebook "></i></a>
         <a class="w3-button w3-8c71c0 w3-round-xxlarge" href="javascript:void(0) " title="Twitter "><i
@@ -177,6 +185,7 @@
               <i class="fa fa-chevron-circle-up "></i></span></a>
         </div>
       </footer>
+
 
     <script>
         // Script for side navigation

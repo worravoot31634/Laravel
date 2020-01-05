@@ -68,7 +68,7 @@
     <div>
         <br>
         <br><br>
-        <center><b><p style="font-size:35px;">เขียนกิจกรรม</p></b></center>
+        <center><b><p style="font-size:35px;">แก้ไขข้อมูลบริจาค</p></b></center>
     </div>
     <form action="" method="post" enctype="multipart/form-data">
         <div class="container" style="width: 80%;">
@@ -112,12 +112,24 @@
                     </div>
                     <center>
                         <div class="w3-row" style="width: 80%;">
-                            <p><textarea style="width: 100%;border-radius: 5px;" class="w3-border" rows="15"
+                            <p><textarea style="width: 100%;border-radius: 5px;" class="w3-border" rows="10"
                                     name="comment"></textarea>
                             </p>
+                        </div>
+                    </center>
+                    <div>
+                       <b> <p class="w3-left" style="font-size: 25px;margin-left: 30px;">จำนวนเงิน</p></b>
+                    </div>
 
+                    <center>
+                        <div class="w3-row" style="width: 80%;">
+                            <p><input type="text" style="width: 100%;border-radius: 5px;" class="w3-border" rows="15"
+                                    name="comment"></textarea>
+                            </p>
+                            
                             <input type="submit" value="โพสต์" class="submitClass"
                                 style="float:right;margin-bottom: 10px;">
+                         
                         </div>
                     </center>
                 </div>

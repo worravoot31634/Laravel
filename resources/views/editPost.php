@@ -68,7 +68,7 @@
     <div>
         <br>
         <br><br>
-        <center><b><p style="font-size:35px;">เขียนกิจกรรม</p></b></center>
+        <center><b><p style="font-size:35px;">แก้ไขข้อมูลกิจกรรม</p></b></center>
     </div>
     <form action="" method="post" enctype="multipart/form-data">
         <div class="container" style="width: 80%;">

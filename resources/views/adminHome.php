@@ -23,11 +23,12 @@
 
 <body id="myPage">
 
-<?php
-    include('NavbarMember.html');
-    ?>
 
-  
+<?php
+    include('NavbarAdmin.html');
+    ?>
+    
+
   <!-- Image Header -->
   <div style="margin-top:35px;" class="w3-display-container w3-animate-opacity ">
 

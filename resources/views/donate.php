@@ -25,12 +25,6 @@
 <link rel="stylesheet" href="/lib/bootstrap.min.css">
   <script src="/lib/jquery-1.12.2.min.js"></script>
   <script src="/lib/bootstrap.min.js"></script>
-  <style>
-
-
-
-  .city {display:none}
-  </style>
 <style>
 .statusCircle {
   height: 30px;
@@ -80,13 +74,16 @@
 
 
 
+  
 <?php
     include('NavbarNonMember.html');
     ?>
 
 
 
+
     <!--Fix 80 percent Screen-->
+    <br>
     <table width="80%" align="center">
 
 
@@ -102,12 +99,12 @@
 
         <tr>
             <td>
-                  
-                        
+
+
                         <div style="width: 100%; ">
                         <table align=center style="width: 70%;">
                             <tr style="width: 100%;" >
-                                <td style="width: 50%;"> 
+                                <td style="width: 50%;">
                                     <input class="advanceSearch" placeholder="ค้นหา" style="font-size: 20px;" size="100" type="text" />
                                 </td>
                                 <td >
@@ -120,34 +117,34 @@
                                                             <option style="font-size: 20px;" value="1">นครราชสีมา</option>
                                                             <option style="font-size: 20px;" value="2">บุรีรัมย์</option>
                                                         </select>
-                                                        </div>  
+                                                        </div>
                                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <a href="#" style="font-size:18px; background-color: #726292; color: white;" 
+                                                        <a href="#" style="font-size:18px; background-color: #726292; color: white;"
                                                         class="w3-button w3-circle" title="Search"><i class="fa fa-search"></i></a>
 
                                 </td>
-                                
-                               
-                                
+
+
+
                             </tr>
                         </table>
                         </div>
-                                                                       
-                            
-                        
-                        
-                    
-                
+
+
+
+
+
+
 <br>
 <div class="w3-container">
-    
+
         <div class="w3-container w3-border" style="margin: 1%; position:relative">
 
             <!--row of half content activity-->
-    
+
             <div class="w3-row" style="width: 100%;margin:auto">
                         <!--row  half right side-->
-            
+
                     <div class="w3-half" style="padding: 10px;">
                         <div class="w3-half colorActivity" style="height: 220px;">
                             <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 220px;">
@@ -172,7 +169,7 @@
                                 readable content of a page
                                 when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
                                 normal
-                                
+
                             </p>
                             <table style="width: 100%;">
                                 <tr>
@@ -186,23 +183,23 @@
                                 </div>
                                 </td>
                                 <td style="width: 100%;">
-                                    <button onclick="document.getElementById('id01').style.display='block'"  class="btnEdit">บริจาค</button>
+                                    <a href="login"><button class="btnEdit">บริจาค</button></a>
                                 </td>
                                 </tr>
                             </table>
                     </a></div><!-- end of text -->
             </div> <!-- end of row  half right side-->
-    
+
             <!--row  half right side-->
-    
+
             <div class="w3-half" style="padding: 10px;">
                     <div class="w3-half colorActivity" style="height: 220px;">
                         <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 220px;">
                     </div> <!-- end of img -->
-    
-    
+
+
                     <div class="w3-half colorActivity" style="height: 220px;">
-    
+
                         <!--img and text side by side-->
                         <div style="margin-top: 5px;float: left;">
                             <div style="display:inline-block">
@@ -213,13 +210,13 @@
                                 <h6 class="w3-left" style="font-size: 14px;">Jame Logan</h6>
                             </div>
                         </div><!-- end of img and text side by side-->
-    
+
                         <p style="font-size: 1vw;clear: both;">It is a long established fact that a reader will be
                             distracted by the
                             readable content of a page
                             when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
                             normal
-                            
+
                         </p>
                         <table style="width: 100%;">
                             <tr>
@@ -233,23 +230,23 @@
                               </div>
                               </td>
                               <td style="width: 100%;">
-                                <button onclick="document.getElementById('id01').style.display='block'"  class="btnEdit">บริจาค</button>
+                              <a href="login"><button class="btnEdit">บริจาค</button></a>
                               </td>
                             </tr>
                         </table>
                 </a></div><!-- end of text -->
         </div> <!-- end of row  half right side-->
-    
+
         </div>
-       
-        
-        
+
+
+
         <!---row 2 --->
             <!--row of half content activity-->
-    
+
             <div class="w3-row" style="width: 100%;margin:auto">
                         <!--row  half right side-->
-            
+
                     <div class="w3-half" style="padding: 10px;">
                         <div class="w3-half colorActivity" style="height: 220px;">
                             <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 220px;">
@@ -274,7 +271,7 @@
                                 readable content of a page
                                 when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
                                 normal
-                                
+
                             </p>
                             <table style="width: 100%;">
                                 <tr>
@@ -288,23 +285,23 @@
                                 </div>
                                 </td>
                                 <td style="width: 100%;">
-                                    <button onclick="document.getElementById('id01').style.display='block'"  class="btnEdit">บริจาค</button>
+                                    <a href="login"><button class="btnEdit">บริจาค</button></a>
                                 </td>
                                 </tr>
                             </table>
                     </a></div><!-- end of text -->
             </div> <!-- end of row  half right side-->
-    
+
             <!--row  half right side-->
-    
+
             <div class="w3-half" style="padding: 10px;">
                     <div class="w3-half colorActivity" style="height: 220px;">
                         <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 220px;">
                     </div> <!-- end of img -->
-    
-    
+
+
                     <div class="w3-half colorActivity" style="height: 220px;">
-    
+
                         <!--img and text side by side-->
                         <div style="margin-top: 5px;float: left;">
                             <div style="display:inline-block">
@@ -315,13 +312,13 @@
                                 <h6 class="w3-left" style="font-size: 14px;">Jame Logan</h6>
                             </div>
                         </div><!-- end of img and text side by side-->
-    
+
                         <p style="font-size: 1vw;clear: both;">It is a long established fact that a reader will be
                             distracted by the
                             readable content of a page
                             when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
                             normal
-                            
+
                         </p>
                         <table style="width: 100%;">
                             <tr>
@@ -335,22 +332,22 @@
                               </div>
                               </td>
                               <td style="width: 100%;">
-                                <button onclick="document.getElementById('id01').style.display='block'"  class="btnEdit">บริจาค</button>
+                              <a href="login"><button class="btnEdit">บริจาค</button></a>
                               </td>
                             </tr>
                         </table>
                 </a></div><!-- end of text -->
         </div> <!-- end of row  half right side-->
-    
+
         </div>
         <!-----END row2----->
 
         <!---row 3 --->
             <!--row of half content activity-->
-    
+
             <div class="w3-row" style="width: 100%;margin:auto">
                 <!--row  half right side-->
-    
+
             <div class="w3-half" style="padding: 10px;">
                 <div class="w3-half colorActivity" style="height: 220px;">
                     <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="auto" style="height: 220px;">
@@ -375,7 +372,7 @@
                         readable content of a page
                         when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
                         normal
-                        
+
                     </p>
                     <table style="width: 100%;">
                         <tr>
@@ -389,7 +386,7 @@
                         </div>
                         </td>
                         <td style="width: 100%;">
-                            <button onclick="document.getElementById('id01').style.display='block'"  class="btnEdit">บริจาค</button>
+                        <a href="login"><button class="btnEdit">บริจาค</button></a>
                         </td>
                         </tr>
                     </table>
@@ -422,7 +419,7 @@
                     readable content of a page
                     when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
                     normal
-                    
+
                 </p>
                 <table style="width: 100%;">
                     <tr>
@@ -436,7 +433,7 @@
                       </div>
                       </td>
                       <td style="width: 100%;">
-                        <button onclick="document.getElementById('id01').style.display='block'"  class="btnEdit">บริจาค</button>
+                      <a href="login"><button class="btnEdit">บริจาค</button></a>
                       </td>
                     </tr>
                 </table>
@@ -447,61 +444,8 @@
 <!-----END row3----->
          <!--end of row of half content activity-->
         </div>
-        
+
     </div>
-    border: 2px solid red;
-    border-radius: 12px;
-     <!----Popup box---->
-     <div id="id01" class="w3-modal">
-        
-        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-         <header class="w3-container w3-8c71c0"> 
-          <span onclick="document.getElementById('id01').style.display='none'" 
-          class="w3-button w3-8c71c0 w3-xlarge w3-display-topright">&times;</span>
-          <b><center><p style="font-size: 30px;margin: 5px; color: #ffffff;">บริจาค</p></center><b>
-         </header>
-         <table class="w3-light-grey" style="width: 100%; ">
-             <tr style="width: 100%;">
-                 <td style="width: 30%;">
-                    <div class="w3-half "  style="width: 100%;">
-                            <img src="./Images/new1.jpg" alt="" srcset="" width="100%" height="100%">
-                    </div> <!-- end of img -->
-                 </td>
-                 <td style="width: 50%;">
-                     <div  class="w3-container w3-light-grey">
-                                    <form action="">
-                                        <br>
-                                        <p style="font-size: 18px;left: 10%;position:relative;">ชื่อ-นามสกุล</p>
-                                        <center><input type="text" style="width:80%;border: none;border-radius: 2px;" name="donateName"></center>
-                                        
-                                        <p style="font-size: 18px;left: 10%;position:relative;">รหัสบัตรเครดิต</p>
-                                        <center><input type="password" style="width:80%;border: none;border-radius: 2px;" name="creditCard"></center>
-
-                                        <p style="font-size: 18px;left: 10%;position:relative;">CVV</p>
-                                        <center><input type="text" style="width:80%;border: none;border-radius: 2px;" name="CVV"></center>
-                                        
-                                        <p style="font-size: 18px;left: 10%;position:relative;">วันที่</p>
-                                        <center><p style="font-size: 18px;;position:relative;">5 มกราคม 2563</p></center>
-
-                                        <p style="font-size: 18px;left: 10%;position:relative;">จำนวนเงิน</p>
-                                        <center><input type="text" style="width:80%;border: none;border-radius: 2px;" name="donate"></center>
-                                        
-                                        
-                                        <br>
-                                    </form>
-                        <div class="w3-container w3-padding">
-                            <button class="btnEdit w3-right " onclick="document.getElementById('id01').style.display='none'" style="height: 1cm;">ยกเลิก</button>
-                            <button class="btnEdit w3-left  " onclick="document.getElementById('id01').style.display='none'" style="height: 1cm;">บริจาค</button>
-                        </div>
-                    </div>
-                 </td>
-             </tr>
-         </table>
-         
-        </div>
-       </div>
-    <!----End Popup box----->
-
 </div>
 
 
@@ -512,28 +456,9 @@
 
 
     </table>
+
+
 <br><br>
-
-
-<!---Script popup------>
-<script>
-    document.getElementsByClassName("tablink")[0].click();
-    
-    function openCity(evt, cityName) {
-      var i, x, tablinks;
-      x = document.getElementsByClassName("city");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < x.length; i++) {
-        tablinks[i].classList.remove("w3-light-grey");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.classList.add("w3-light-grey");
-    }
-    </script>
-     
 
 <style>
     .w3-8c71c0 {
@@ -569,7 +494,8 @@
               </td>
             </tr>
           </table>
-          <p><button class="w3-button w3-8c71c0 w3-round-xxlarge" style="font-size: 20px;">สมัครสมาชิก</button></p>
+          
+        <p><button class="w3-button w3-8c71c0 w3-round-xxlarge" style="font-size: 20px;">สมัครสมาชิก</button></p>
           <a class="w3-button w3-8c71c0 w3-round-xxlarge" href="javascript:void(0) " title="Facebook "><i class="fa fa-facebook "></i></a>
           <a class="w3-button w3-8c71c0 w3-round-xxlarge" href="javascript:void(0) " title="Twitter "><i class="fa fa-twitter "></i></a>
           <a class="w3-button w3-8c71c0 w3-round-xxlarge" href="javascript:void(0) " title="Google + "><i class="fa fa-google-plus "></i></a>

@@ -68,7 +68,7 @@
     <div>
         <br>
         <br><br>
-        <center><b><p style="font-size:35px;">เขียนกิจกรรม</p></b></center>
+        <center><b><p style="font-size:35px;">ขอบริจาค</p></b></center>
     </div>
     <form action="" method="post" enctype="multipart/form-data">
         <div class="container" style="width: 80%;">
@@ -175,7 +175,6 @@
             </td>
           </tr>
         </table>
-        <p><button class="w3-button w3-8c71c0 w3-round-xxlarge" style="font-size: 20px;">สมัครสมาชิก</button></p>
         <a class="w3-button w3-8c71c0 w3-round-xxlarge" href="javascript:void(0) " title="Facebook "><i
             class="fa fa-facebook "></i></a>
         <a class="w3-button w3-8c71c0 w3-round-xxlarge" href="javascript:void(0) " title="Twitter "><i
