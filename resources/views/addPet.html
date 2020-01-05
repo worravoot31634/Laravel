@@ -117,13 +117,13 @@ background-color: #373143;
 
 
 
-    <!-- Navbar -->
+     <!-- Navbar -->
     <div id="menu" class="w3-top" style="display: block;">
-        <div class="w3-bar w3-white w3-card">
+        <div class="w3-white w3-card">
             <a class="w3-bar-item w3-button  w3-hide-large w3-right w3-hover-white" href="javascript:void(0);"
                 onclick="openNav()"><i class="fa fa-bars"></i></a>
-            <a href="#" style="font-size: 20px;" class="w3-bar-item w3-button w3-white"><img width="50"
-                    src="./Images/icon/Logo.png"></a>
+            <a href="home" style="font-size: 20px;" class="w3-bar-item w3-button w3-white"><img width="100"
+                    src="./Images/logo.png"></a>
             <div style="margin-top: 10px;" class="w3-right w3-hide-medium w3-hide-small w3-animate-right">
                 <a href="" style="font-size: 20px;"
                     class=" w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>สัตว์เลี้ยง</b></a>
@@ -131,10 +131,14 @@ background-color: #373143;
                     class=" w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>บริจาค</b></a>
                 <a href="" style="font-size: 20px;"
                     class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>กิจกรรม</b></a>
-                <a href=" #pricing " style="font-size: 20px;"
-                    class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>เข้าสู่ระบบ</b></a>
-                <a href="#contact " style="font-size: 20px; "
-                    class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>สมัครสมาชิก</b></a>
+                <div class="w3-dropdown-hover" style="font-size: 20px;">
+                    <button class=" w3-button"><b>Jame Logan</b></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="myPost" class="w3-bar-item w3-button"><b>โพสต์ของฉัน</b></a>
+                        <a href="chatMessage" class="w3-bar-item w3-button"><b>ประวัติแชท</b></a>
+                        <a href="home" class="w3-bar-item w3-button"><b>ออกจากระบบ</b></a>
+                    </div>
+                </div>
                 <a href="#" style="font-size:18px; margin-right: 10px;" onclick="hideNav()"
                     class="w3-black w3-circle w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right"
                     title="Search"><i class="fa fa-search"></i></a>
@@ -146,9 +150,14 @@ background-color: #373143;
             <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
             <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
             <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
-            <a href="#pricing " class="w3-bar-item w3-button ">เข้าสู่ระบบ</a>
-            <a href="#contact " class="w3-bar-item w3-button ">สมัครสมาชิก</a>
-
+            <div class="w3-dropdown-hover">
+                <button class=" w3-button"><b>Jame Logan</b></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button"><b>โพสต์ของฉัน</b></a>
+                    <a href="#" class="w3-bar-item w3-button"><b>ประวัติแชท</b></a>
+                    <a href="#" class="w3-bar-item w3-button"><b>ออกจากระบบ</b></a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -178,8 +187,14 @@ background-color: #373143;
             <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
             <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
             <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
-            <a href="#pricing " class="w3-bar-item w3-button ">เข้าสู่ระบบ</a>
-            <a href="#contact " class="w3-bar-item w3-button ">สมัครสมาชิก</a>
+            <div class="w3-dropdown-hover">
+                <button class=" w3-button"><b>Jame Logan</b></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button"><b>โพสต์ของฉัน</b></a>
+                    <a href="#" class="w3-bar-item w3-button"><b>ประวัติแชท</b></a>
+                    <a href="#" class="w3-bar-item w3-button"><b>ออกจากระบบ</b></a>
+                </div>
+            </div>
 
         </div>
 
@@ -191,7 +206,7 @@ background-color: #373143;
         <div class="container" style="margin-top:40px;display:inline-block">
             <img src="./Images/icon/cat.png" alt="" srcset="" width="50px">
             <div style="display:inline-block;">
-                <p style="font-size: 30px;font-weight:bold;vertical-align: middle;">รายละเอียด</p>
+                <p style="font-size: 30px;font-weight:bold;vertical-align: middle;">โพสต์หาเจ้าของให้น้อง</p>
             </div>
         </div>
     </center>
@@ -204,21 +219,11 @@ background-color: #373143;
     <div class="w3-container" style=" margin-left: auto;
     margin-right: auto;width: 80%;padding: 10px;" height="200px">
 <!--Left side of Page-->
-        <div class="w3-half">
-            <form action="" method="post" enctype="multipart/form-data">
-                <div class="container" style="width: 80%;">
-                    <div class="row w3-border" style="margin-top: 50px;margin-bottom: 50px;">
-                        <div class="w3-half w3-center">
-                            <img src="./Images/source/picture.png" alt="" srcset="" width="50%">
-                            <div style="clear:both;">
-                                <input type="file" value="โพสต์" class="submitClass" style="margin-bottom: 10px;">
-                            </div>
-        
-                        </div>
+        <div class="w3-half w3-center w3-border">
+            <img src="./Images/source/picture.png" alt="" srcset="" width="50%">
+                    <div style="clear:both;">
+                        <input type="file" value="โพสต์" class="submitClass" style="margin-bottom: 10px;">
                     </div>
-                </div>
-                
-                        </form>
 
         </div>
         <div class="w3-half" style="background-color: #E2E0E0;">
