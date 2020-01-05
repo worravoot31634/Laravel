@@ -8,15 +8,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./CSS/Bootstrap/css/bootstrap.min.css">
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./CSS/CustomCss.css">
@@ -62,66 +56,20 @@
 
 
 
-    <!-- Navbar -->
-    <div id="menu" class="w3-top" style="display: block;">
-        <div class="w3-white w3-card">
-            <a class="w3-bar-item w3-button  w3-hide-large w3-right w3-hover-white" href="javascript:void(0);"
-                onclick="openNav()"><i class="fa fa-bars"></i></a>
-            <a href="#" style="font-size: 20px;" class="w3-bar-item w3-button w3-white"><img width="50"
-                    src="./Images/icon/Logo.png"></a>
-            <div style="margin-top: 10px;" class="w3-right w3-hide-medium w3-hide-small w3-animate-right">
-                <a href="" style="font-size: 20px;"
-                    class=" w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>สัตว์เลี้ยง</b></a>
-                <a href="" style="font-size: 20px;"
-                    class=" w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>บริจาค</b></a>
-                <a href="" style="font-size: 20px;"
-                    class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><b>กิจกรรม</b></a>
-                <div class="w3-dropdown-hover" style="font-size: 20px;">
-                    <button class=" w3-button"><b>Jame Logan</b></button>
-                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                        <a href="#" class="w3-bar-item w3-button"><b>โพสต์ของฉัน</b></a>
-                        <a href="#" class="w3-bar-item w3-button"><b>ประวัติแชท</b></a>
-                        <a href="#" class="w3-bar-item w3-button"><b>ออกจากระบบ</b></a>
-                    </div>
-                </div>
-                <a href="#" style="font-size:18px; margin-right: 10px;" onclick="hideNav()"
-                    class="w3-black w3-circle w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right"
-                    title="Search"><i class="fa fa-search"></i></a>
-            </div>
-        </div>
-
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large ">
-            <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
-            <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
-            <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
-            <div class="w3-dropdown-hover">
-                <button class=" w3-button"><b>Jame Logan</b></button>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="#" class="w3-bar-item w3-button"><b>โพสต์ของฉัน</b></a>
-                    <a href="#" class="w3-bar-item w3-button"><b>ประวัติแชท</b></a>
-                    <a href="#" class="w3-bar-item w3-button"><b>ออกจากระบบ</b></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <?php
+    include('NavbarOrganization.html');
+    ?>
 
 
     <!-- Navbar Search Hide-->
     <div id="searchMenu" class="w3-top" style="display: none;">
         <div class="w3-bar w3-white w3-card">
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white"
-                href="javascript:void(0);" onclick="openNav2()"><i class="fa fa-bars"></i></a>
-            <a href="#" style="font-size: 20px;" class="w3-bar-item w3-button w3-white"><img width="50"
-                    src="./Images/icon/Logo.png"></a>
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white" href="javascript:void(0);" onclick="openNav2()"><i class="fa fa-bars"></i></a>
+            <a href="#" style="font-size: 20px;" class="w3-bar-item w3-button w3-white"><img width="50" src="./Images/icon/Logo.png"></a>
             <div style="margin-top: 10px;" class="w3-center w3-hide-small w3-animate-left">
                 <input class="simpleSearch" placeholder="ค้นหา" style="font-size: 20px;" size="100" type="text" />
-                <a href="#" style="font-size:18px; " onclick="hideNav()"
-                    class=" w3-black w3-button w3-hide-small w3-circle" title="Search"><i class="fa fa-search"></i></a>
-                <a href="#" style="font-size:18px; margin-right: 10px;margin-bottom: 4px;" onclick="showNav()"
-                    class="w3-black w3-bar-item w3-button w3-hide-small w3-right w3-circle" title="Search"><i
-                        class="fa fa-close"></i></a>
+                <a href="#" style="font-size:18px; " onclick="hideNav()" class=" w3-black w3-button w3-hide-small w3-circle" title="Search"><i class="fa fa-search"></i></a>
+                <a href="#" style="font-size:18px; margin-right: 10px;margin-bottom: 4px;" onclick="showNav()" class="w3-black w3-bar-item w3-button w3-hide-small w3-right w3-circle" title="Search"><i class="fa fa-close"></i></a>
             </div>
         </div>
 
@@ -129,6 +77,9 @@
 
         <!-- Navbar on small screens case Search-->
         <div id="navDemo2" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+            <a href="#team " class="w3-bar-item w3-button ">เขียนกิจกรรม</a>
+            <a href="#team " class="w3-bar-item w3-button ">ขอบริจาค</a>
+            <a href="#work " class="w3-bar-item w3-button ">เขียนโพสต์</a>
             <a href="#team " class="w3-bar-item w3-button ">สัตว์เลี้ยง</a>
             <a href="#team " class="w3-bar-item w3-button ">บริจาค</a>
             <a href="#work " class="w3-bar-item w3-button ">กิจกรรม</a>
@@ -145,6 +96,7 @@
 
     </div>
 
+    <!--content-->
     <div class="w3-container" style="margin-top: 80px;left: 2%;position:relative">
         <div style="display:inline-block">
             <p style="font-size: 28px;font-weight: bold;">โพสต์ของฉัน</p>
@@ -153,7 +105,7 @@
             <img src="./Images/icon/dogIcon2.png" alt="" srcset="" width="25%">
         </div>
     </div>
-    <!--content-->
+
     <div class="w3-container">
         <div class="w3-container w3-border">
             <div style="padding:10px;" class="w3-quarter w3-container">
@@ -228,8 +180,7 @@
                         <!--img and text side by side-->
                         <div style="margin-top: 5px;float: left;">
                             <div style="display:inline-block">
-                                <img src="./Images/new1.jpg" alt="" srcset="" width="100%"
-                                    style="border-radius: 100%;width: 20px;height: 20px;float: left;margin-right: 5px;margin-left:5px;">
+                                <img src="./Images/new1.jpg" alt="" srcset="" width="100%" style="border-radius: 100%;width: 20px;height: 20px;float: left;margin-right: 5px;margin-left:5px;">
                             </div>
                             <div style="display:inline-block">
                                 <h6 class="w3-left" style="font-size: 14px;">Jame Logan</h6>
@@ -264,8 +215,7 @@
                     <!--img and text side by side-->
                     <div style="margin-top: 5px;float: left;">
                         <div style="display:inline-block">
-                            <img src="./Images/new1.jpg" alt="" srcset="" width="100%"
-                                style="border-radius: 100%;width: 20px;height: 20px;float: left;margin-right: 5px;margin-left:5px;">
+                            <img src="./Images/new1.jpg" alt="" srcset="" width="100%" style="border-radius: 100%;width: 20px;height: 20px;float: left;margin-right: 5px;margin-left:5px;">
                         </div>
                         <div style="display:inline-block">
                             <h6 class="w3-left" style="font-size: 14px;">Jame Logan</h6>
@@ -319,8 +269,7 @@
                         <!--img and text side by side-->
                         <div style="margin-top: 5px;float: left;">
                             <div style="display:inline-block">
-                                <img src="./Images/new1.jpg" alt="" srcset="" width="100%"
-                                    style="border-radius: 100%;width: 20px;height: 20px;float: left;margin-right: 5px;margin-left:5px;">
+                                <img src="./Images/new1.jpg" alt="" srcset="" width="100%" style="border-radius: 100%;width: 20px;height: 20px;float: left;margin-right: 5px;margin-left:5px;">
                             </div>
                             <div style="display:inline-block">
                                 <h6 class="w3-left" style="font-size: 14px;">Jame Logan</h6>
@@ -355,8 +304,7 @@
                     <!--img and text side by side-->
                     <div style="margin-top: 5px;float: left;">
                         <div style="display:inline-block">
-                            <img src="./Images/new1.jpg" alt="" srcset="" width="100%"
-                                style="border-radius: 100%;width: 20px;height: 20px;float: left;margin-right: 5px;margin-left:5px;">
+                            <img src="./Images/new1.jpg" alt="" srcset="" width="100%" style="border-radius: 100%;width: 20px;height: 20px;float: left;margin-right: 5px;margin-left:5px;">
                         </div>
                         <div style="display:inline-block">
                             <h6 class="w3-left" style="font-size: 14px;">Jame Logan</h6>
@@ -385,16 +333,11 @@
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center ">
         <h4>Follow Us</h4>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Facebook "><i
-                class="fa fa-facebook "></i></a>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Twitter "><i
-                class="fa fa-twitter "></i></a>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Google + "><i
-                class="fa fa-google-plus "></i></a>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Google + "><i
-                class="fa fa-instagram "></i></a>
-        <a class="w3-button w3-large w3-teal w3-hide-small " href="javascript:void(0) " title="Linkedin "><i
-                class="fa fa-linkedin "></i></a>
+        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Facebook "><i class="fa fa-facebook "></i></a>
+        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Twitter "><i class="fa fa-twitter "></i></a>
+        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Google + "><i class="fa fa-google-plus "></i></a>
+        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Google + "><i class="fa fa-instagram "></i></a>
+        <a class="w3-button w3-large w3-teal w3-hide-small " href="javascript:void(0) " title="Linkedin "><i class="fa fa-linkedin "></i></a>
         <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp " target="_blank ">w3.css</a></p>
 
         <div style="position:relative;bottom:100px;z-index:1; " class="w3-tooltip w3-right ">
