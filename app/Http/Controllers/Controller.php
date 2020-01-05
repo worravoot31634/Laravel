@@ -146,4 +146,8 @@ class Controller extends BaseController
             ->with('subtitle', 'Introduction to Laravel');
     }
 
+    public function homeLogin(){
+        return view("homeLogin");
+    }
+
 }
