@@ -895,7 +895,7 @@ body {
              <i class="fa fa-instagram" aria-hidden="true"></i>
         </div>
     </div>
-    <div class="messages">
+    <div class="messages" id="message1">
         <ul>
             <li class="sent">
                 <img src="http://emilcarlsson.se/assets/louislitt.png" alt="" />
@@ -948,7 +948,7 @@ body {
                <i class="fa fa-instagram" aria-hidden="true"></i>
           </div>
       </div>
-      <div class="messages">
+      <div class="messages" id="message2">
           <ul>
               <li class="sent">
                   <img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
@@ -984,11 +984,11 @@ body {
               </li>
           </ul>
       </div>
-      <div class="message-input">
+      <div class="message-input" id="inputMessage2">
           <div class="wrap">
           <input type="text" placeholder="พิมพ์ข้อความ..." />
           
-          <button class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+          <button class="submit" id="submit2"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
           </div>
       </div>
   </div>
@@ -1086,18 +1086,20 @@ document.getElementById("btnChat").style.display = "block"
 
 
 function newMessage() {
-	message = $(".message-input input").val();
+	message = $("#inputMessage2 input").val();
 	if($.trim(message) == '') {
 		return false;
-	}
-	$('<li class="sent"><img src="http://emilcarlsson.se/assets/mikeross.png" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
-	$('.message-input input').val(null);
+  }
+  console.log(message);
+	$('<li class="replies"><img src="./Images/userPic.png" alt="" /><p>' + message + '</p></li>').appendTo($('#message2 ul'));
+  $('#inputMessage2 input').val(null);
 	$('.contact.active .preview').html('<span>คุณ: </span>' + message);
-	$(".messages").animate({ scrollTop: $(document).height() }, "fast");
+	$("#message2").animate({ scrollTop: $(document).height() }, "fast");
 };
 
-$('.submit').click(function() {
+$('#submit2').click(function() {
   newMessage();
+  
 });
 
 $(window).on('keydown', function(e) {
