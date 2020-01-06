@@ -62,4 +62,4 @@ Route::get('editPetDetailLogin', 'Controller@editPetDetailLogin');
 Route::get('editDonate', 'Controller@editDonate');
 Route::get('editPost', 'Controller@editPost');
 
-Route::post('addNewPet', 'Controller@addNewPet');
+Route::get('addNewPet', 'Controller@addNewPet');

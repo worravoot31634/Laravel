@@ -144,7 +144,7 @@
 <body id="myPage">
 
 
-
+    <?php include('NavbarOrganization.php') ?>
 
     <!--Content-->
 
@@ -193,7 +193,7 @@
                 </div>
             </div>
             <!--Detail Pet-->
-            <form method="post" enctype="multipart/form-data">
+            <form method="get" action="<?php echo $_SERVER['REQUEST_URI'] ?>" enctype="multipart/form-data">
                 <div class="w3-container">
                     <br>
                     <div class="w3-row w3-padding">

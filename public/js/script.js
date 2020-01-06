@@ -22,6 +22,6 @@ function addNewPet() {
 
     //url = "greeting.php?day=Monday"
     alert(url);
-    xmlHttp.open("POST", url, true);
+    xmlHttp.open("GET", url, true);
     xmlHttp.send(null);
 }
