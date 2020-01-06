@@ -312,12 +312,6 @@
 
 
     </table>
-
-
-<<<<<<< HEAD
-    <br><br>
-=======
-<br><br>
     <style>
         .w3-8c71c0 {
           background-color: #8c71c0;
@@ -326,7 +320,6 @@
         .w3-564b6c {
           background-color: #564b6c;
         }
->>>>>>> 5ba3533f1def04a4e553f7414992e27b4b5d0605
 
         .w3-373143 {
           background-color: #373143;
@@ -341,17 +334,6 @@
             </td>
           </tr>
 
-<<<<<<< HEAD
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center ">
-        <h4>Follow Us</h4>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Facebook "><i class="fa fa-facebook "></i></a>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Twitter "><i class="fa fa-twitter "></i></a>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Google + "><i class="fa fa-google-plus "></i></a>
-        <a class="w3-button w3-large w3-teal " href="javascript:void(0) " title="Google + "><i class="fa fa-instagram "></i></a>
-        <a class="w3-button w3-large w3-teal w3-hide-small " href="javascript:void(0) " title="Linkedin "><i class="fa fa-linkedin "></i></a>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp " target="_blank ">w3.css</a></p>
-=======
           <tr style="width:100%;">
             <td>
               <p style="font-size: 30px;color: #E2E0E0;">
@@ -375,7 +357,6 @@
         <a class="w3-button w3-8c71c0 w3-round-xxlarge" href="javascript:void(0) " title="Google + "><i
             class="fa fa-google-plus "></i></a>
         <p></p>
->>>>>>> 5ba3533f1def04a4e553f7414992e27b4b5d0605
 
         <div style="position:relative;bottom:100px;z-index:1; " class="w3-tooltip w3-right ">
           <span class="w3-text w3-padding  w3-8c71c0 w3-hide-small  " style="color: #E2E0E0;">Go To Top</span>
