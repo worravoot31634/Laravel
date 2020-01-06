@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -60,3 +61,5 @@ Route::get('petDetailLogin', 'Controller@petDetailLogin');
 Route::get('editPetDetailLogin', 'Controller@editPetDetailLogin');
 Route::get('editDonate', 'Controller@editDonate');
 Route::get('editPost', 'Controller@editPost');
+
+Route::post('addNewPet', 'Controller@addNewPet');

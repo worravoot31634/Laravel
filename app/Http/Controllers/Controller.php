@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -170,28 +171,32 @@ class Controller extends BaseController
             ->with('subtitle', 'Introduction to Laravel');
     }
 
-    public function addPet(){
+    public function addPet()
+    {
         return view("addPet")
-        ->with('title', 'Laravel Testing')
-        ->with('subtitle', 'Introduction to Laravel');
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
     }
 
-    public function adminCheckSys(){
+    public function adminCheckSys()
+    {
         return view("adminCheckSys")
-        ->with('title', 'Laravel Testing')
-        ->with('subtitle', 'Introduction to Laravel');
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
     }
-    public function adminRegis(){
+    public function adminRegis()
+    {
         return view("adminRegis")
-        ->with('title', 'Laravel Testing')
-        ->with('subtitle', 'Introduction to Laravel');
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
     }
-    public function activityLogin(){
+    public function activityLogin()
+    {
         return view("activityLogin")
-        ->with('title', 'Laravel Testing')
-        ->with('subtitle', 'Introduction to Laravel');
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
     }
-   
+
     public function donateLogin()
     {
         return view("donateLogin")
@@ -293,6 +298,10 @@ class Controller extends BaseController
             ->with('title', 'Laravel Testing')
             ->with('subtitle', 'Introduction to Laravel');
     }
-
-
+    public function addNewPet()
+    {
+        return view("addNewPet")
+            ->with('title', 'Laravel Testing')
+            ->with('subtitle', 'Introduction to Laravel');
+    }
 }
